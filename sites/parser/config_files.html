@@ -190,35 +190,6 @@
         <article role="main">
           <section id="parser-configuration-files">
 <h1>Parser configuration files<a class="headerlink" href="#parser-configuration-files" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="Parser.AttributeTypes.AttributeType">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.AttributeTypes.</span></span><span class="sig-name descname"><span class="pre">AttributeType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/Parser/AttributeTypes.html#AttributeType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Parser.AttributeTypes.AttributeType" title="Permalink to this definition">¶</a></dt>
-<dd><p>Base class attribute type
-Holds basic common information and provides common interfaces for an attribute type.
-Specifics should be overwritten in inherited classes.
-The base type itself should never be instantiated.
-The following keys can be handled:</p>
-<ul class="simple">
-<li><p>Required: <a class="reference internal" href="constants.html#Parser.constants.TYPE_KEY" title="Parser.constants.TYPE_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">TYPE</span></code></a></p></li>
-<li><p>Optional: <a class="reference internal" href="constants.html#Parser.constants.TOOLTIP_KEY" title="Parser.constants.TOOLTIP_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">TOOLTIP</span></code></a></p></li>
-<li><p>Optional: <a class="reference internal" href="constants.html#Parser.constants.LABEL_KEY" title="Parser.constants.LABEL_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">LABEL</span></code></a></p></li>
-<li><p>Optional: <a class="reference internal" href="constants.html#Parser.constants.PLACEHOLDER_KEY" title="Parser.constants.PLACEHOLDER_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">PLACEHOLDER</span></code></a></p></li>
-<li><p>Optional: <a class="reference internal" href="constants.html#Parser.constants.HIDDEN_KEY" title="Parser.constants.HIDDEN_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">HIDDEN</span></code></a></p></li>
-<li><p>Optional: <a class="reference internal" href="constants.html#Parser.constants.INHERIT_KEY" title="Parser.constants.INHERIT_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">INHERIT</span></code></a></p></li>
-</ul>
-</dd></dl>
-<dl class="py class">
-<dt class="sig sig-object py" id="Parser.AttributeTypes.StringType">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.AttributeTypes.</span></span><span class="sig-name descname"><span class="pre">StringType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/Parser/AttributeTypes.html#StringType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Parser.AttributeTypes.StringType" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#Parser.AttributeTypes.AttributeType" title="Parser.AttributeTypes.AttributeType"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser.AttributeTypes.AttributeType</span></code></a></p>
-<p>String type attribute:</p>
-<p>Used if <a class="reference internal" href="constants.html#Parser.constants.TYPE_KEY" title="Parser.constants.TYPE_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">TYPE</span></code></a> was set to <code class="xref py py-data docutils literal notranslate"><span class="pre">STRING</span></code></p>
-<p>Holds all information necessary for a string attribute type definition.</p>
-<p>Supports the following special keys:</p>
-<ul class="simple">
-<li><p>Optional: <a class="reference internal" href="constants.html#Parser.constants.VALIDATION_KEY" title="Parser.constants.VALIDATION_KEY"><code class="xref py py-data docutils literal notranslate"><span class="pre">VALIDATION</span></code></a></p></li>
-</ul>
-</dd></dl>
 </section>
 
         </article>
