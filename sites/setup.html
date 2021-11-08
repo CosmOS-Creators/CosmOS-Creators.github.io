@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -182,14 +182,82 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section class="tex2jax_ignore mathjax_ignore" id="project-setup">
+          <section id="project-setup">
 <h1>Project setup<a class="headerlink" href="#project-setup" title="Permalink to this headline">¶</a></h1>
+<p>This page will describe how to setup the development environment for developing on the CosmOS referecence project.
+The guide will focus on installing the evironment on a windows system but since we are
+using docker containers and VSCode it should work on most operating systems.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Windows with at least <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install">WSL2</a> installed or just linux will work too.</p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/desktop/windows/wsl/">Docker</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a></p></li>
+</ul>
+</section>
+<section id="first-time-code-checkout">
+<h2>First time code checkout<a class="headerlink" href="#first-time-code-checkout" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><dl>
+<dt>Clone the <a class="reference external" href="https://github.com/CosmOS-Creators/dev_environment">dev environment repository</a> by either downloading the zip from github or using this git command:</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">CosmOS</span><span class="o">-</span><span class="n">Creators</span><span class="o">/</span><span class="n">dev_environment</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>Open the VSCode workspace.</p></li>
+<li><p>Install the recommended VSCode plugins.</p></li>
+<li><dl>
+<dt>You now have two choices:</dt><dd><ol class="arabic">
+<li><dl>
+<dt>Run with GUI support:</dt><dd><ul>
+<li><p>If you want to also run any graphical applications (like CustomBox) from the docker container make sure that you have <a class="reference external" href="https://github.com/microsoft/wslg">WSLg</a> installed if you are on windows.</p></li>
+<li><p>Open the file <code class="file docutils literal notranslate"><span class="pre">.devcontainer/dev_container_GUI.yaml</span></code></p></li>
+<li><p>If you are on windows make sure that under volumes the path on the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> symbol matches your particualr installed WSL distro.
+The default one is set to <code class="docutils literal notranslate"><span class="pre">Ubuntu-20.04</span></code></p>
+<p>If you are on linux you should be able to just mount it to the same location as it is mounted to inside the container.</p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Run without GUI support:</dt><dd><ul class="simple">
+<li><p>Open the file <code class="file docutils literal notranslate"><span class="pre">.devcontainer/devcontainer.json</span></code> and make sure that the property <code class="docutils literal notranslate"><span class="pre">dockerComposeFile</span></code> is set to use the <code class="file docutils literal notranslate"><span class="pre">dev_container.yaml</span></code> file</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>VSCode should ask you now if you would like to repoen the workspace in a new docker container. Select reopen in container:</dt><dd><img alt="Reopen in container message" src="../_images/open_in_container_message.png"/>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>After VSCode reopens open a new terminal window and run the following command:</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">CosmOS</span><span class="o">-</span><span class="n">Creators</span><span class="o">/</span><span class="n">reference_project_stmIDE</span><span class="o">.</span><span class="n">git</span> <span class="o">.</span> <span class="o">--</span><span class="n">recurse</span><span class="o">-</span><span class="n">submodules</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>Now you might need to select workspace folder location inside the doecker container in VSCode or you can also just close and repoen VSCode in order for it to to it for you.</p></li>
+</ol>
+</section>
+<section id="compiling-the-source-code">
+<h2>Compiling the source code<a class="headerlink" href="#compiling-the-source-code" title="Permalink to this headline">¶</a></h2>
+<p>Some default build commands have been setup ready to use ion VSCode.
+You just need to press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Shift</kbd>+<kbd class="kbd docutils literal notranslate">B</kbd></kbd> to call the default build task.</p>
+</section>
 </section>
 
         </article>
@@ -225,7 +293,7 @@
               and
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>. |
-            <a class="muted-link" href="../_sources/sites/setup.md.txt"
+            <a class="muted-link" href="../_sources/sites/setup.rst.txt"
                rel="nofollow">
               Show Source
             </a>
@@ -233,8 +301,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Project setup</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#first-time-code-checkout">First time code checkout</a></li>
+<li><a class="reference internal" href="#compiling-the-source-code">Compiling the source code</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
