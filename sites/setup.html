@@ -190,8 +190,8 @@
         <article role="main">
           <section id="project-setup">
 <h1>Project setup<a class="headerlink" href="#project-setup" title="Permalink to this headline">¶</a></h1>
-<p>This page will describe how to setup the development environment for developing on the CosmOS referecence project.
-The guide will focus on installing the evironment on a windows system but since we are
+<p>This page will describe how to setup the development environment for developing on the CosmOS reference project.
+The guide will focus on installing the environment on a windows system but since we are
 using docker containers and VSCode it should work on most operating systems.</p>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
@@ -219,7 +219,7 @@ using docker containers and VSCode it should work on most operating systems.</p>
 <dt>Run with GUI support:</dt><dd><ul>
 <li><p>If you want to also run any graphical applications (like CustomBox) from the docker container make sure that you have <a class="reference external" href="https://github.com/microsoft/wslg">WSLg</a> installed if you are on windows.</p></li>
 <li><p>Open the file <code class="file docutils literal notranslate"><span class="pre">.devcontainer/dev_container_GUI.yaml</span></code></p></li>
-<li><p>If you are on windows make sure that under volumes the path on the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> symbol matches your particualr installed WSL distro.
+<li><p>If you are on windows make sure that under volumes the path on the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> symbol matches your particular installed WSL distro.
 The default one is set to <code class="docutils literal notranslate"><span class="pre">Ubuntu-20.04</span></code></p>
 <p>If you are on linux you should be able to just mount it to the same location as it is mounted to inside the container.</p>
 </li>
@@ -239,7 +239,7 @@ The default one is set to <code class="docutils literal notranslate"><span class
 </dl>
 </li>
 <li><dl>
-<dt>VSCode should ask you now if you would like to repoen the workspace in a new docker container. Select reopen in container:</dt><dd><img alt="Reopen in container message" src="../_images/open_in_container_message.png"/>
+<dt>VSCode should ask you now if you would like to reopen the workspace in a new docker container. Select reopen in container:</dt><dd><img alt="Reopen in container message" src="../_images/open_in_container_message.png"/>
 </dd>
 </dl>
 </li>
@@ -250,12 +250,12 @@ The default one is set to <code class="docutils literal notranslate"><span class
 </dd>
 </dl>
 </li>
-<li><p>Now you might need to select workspace folder location inside the doecker container in VSCode or you can also just close and repoen VSCode in order for it to to it for you.</p></li>
+<li><p>Now you might need to select workspace folder location inside the docker container in VSCode or you can also just close and reopen VSCode in order for it to to it for you.</p></li>
 </ol>
 </section>
 <section id="compiling-the-source-code">
 <h2>Compiling the source code<a class="headerlink" href="#compiling-the-source-code" title="Permalink to this headline">¶</a></h2>
-<p>Some default build commands have been setup ready to use ion VSCode.
+<p>Some default build commands have been setup ready to use in VSCode.
 You just need to press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Shift</kbd>+<kbd class="kbd docutils literal notranslate">B</kbd></kbd> to call the default build task.</p>
 </section>
 </section>
