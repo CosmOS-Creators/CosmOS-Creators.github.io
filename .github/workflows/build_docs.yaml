@@ -19,9 +19,9 @@ jobs:
           path: gh-pages
       - name: install dependencies
         run: |
-          apt install python3 make
-          pip install sphinx
-          pip install -r Cosmos/docs/requirements.txt
+          sudo apt install python3 make
+          pip3 install sphinx
+          pip3 install -r Cosmos/docs/requirements.txt
       - name: Sphinx Build
         run: |
           cd Cosmos/docs
