@@ -19,7 +19,7 @@ jobs:
           path: gh-pages
       - name: install dependencies
         run: |
-          sudo apt install python3 make
+          sudo apt install python3 make doxygen
           pip3 install sphinx
           pip3 install -r Cosmos/docs/requirements.txt
       - name: Sphinx Build
