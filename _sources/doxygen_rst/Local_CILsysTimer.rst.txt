@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_CILsysTimer
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CILsysTimer_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CILsysTimer_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CILsysTimer_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CILsysTimer_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CILsysTimer_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CILsysTimer_c
+    :project: CosmOS
+

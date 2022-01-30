@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsInterrupt
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsInterrupt_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsInterrupt_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsInterrupt_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsInterrupt_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsInterrupt_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsInterrupt_h
+    :project: CosmOS
+

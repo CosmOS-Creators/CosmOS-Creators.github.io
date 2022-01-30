@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_channelCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_channelCfg
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_channelCfg
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_channelCfg_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_channelCfg_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_channelCfg_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_channelCfg_c
+    :project: CosmOS
+

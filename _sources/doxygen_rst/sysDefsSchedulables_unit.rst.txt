@@ -1,0 +1,12 @@
+sysDefsSchedulables Unit
+========================
+
+.. toctree::
+    :caption: sysDefsSchedulables Unit:
+    :maxdepth: 1
+
+    Global_sysDefsSchedulables
+
+.. doxygengroup:: sysDefsSchedulables_unit
+    :project: CosmOS
+

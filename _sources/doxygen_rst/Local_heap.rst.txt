@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_heap
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_heap
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_heap
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_heap_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_heap_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_heap_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_heap_c
+    :project: CosmOS
+

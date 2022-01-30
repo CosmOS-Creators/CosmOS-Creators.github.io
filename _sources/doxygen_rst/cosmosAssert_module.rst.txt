@@ -1,0 +1,12 @@
+cosmosAssert
+============
+
+.. toctree::
+    :caption: cosmosAssert:
+    :maxdepth: 1
+
+    cosmosAssert_unit
+
+.. doxygengroup:: cosmosAssert_module
+    :project: CosmOS
+

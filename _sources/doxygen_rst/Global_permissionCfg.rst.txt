@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_permissionCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_permissionCfg_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_permissionCfg_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_permissionCfg_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_permissionCfg_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_permissionCfg_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_permissionCfg_h
+    :project: CosmOS
+

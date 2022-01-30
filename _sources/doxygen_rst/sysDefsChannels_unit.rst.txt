@@ -1,0 +1,12 @@
+sysDefsChannels Unit
+====================
+
+.. toctree::
+    :caption: sysDefsChannels Unit:
+    :maxdepth: 1
+
+    Global_sysDefsChannels
+
+.. doxygengroup:: sysDefsChannels_unit
+    :project: CosmOS
+

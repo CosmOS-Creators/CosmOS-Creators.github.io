@@ -1,0 +1,13 @@
+semaphore
+=========
+
+.. toctree::
+    :caption: semaphore:
+    :maxdepth: 1
+
+    semaphore_unit
+    semaphoreCfg_unit
+
+.. doxygengroup:: semaphore_module
+    :project: CosmOS
+

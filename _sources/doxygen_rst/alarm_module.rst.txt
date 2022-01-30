@@ -1,0 +1,13 @@
+alarm
+=====
+
+.. toctree::
+    :caption: alarm:
+    :maxdepth: 1
+
+    alarm_unit
+    alarmCfg_unit
+
+.. doxygengroup:: alarm_module
+    :project: CosmOS
+

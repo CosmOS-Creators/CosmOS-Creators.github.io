@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_CIL
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CIL_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CIL_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CIL_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CIL_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CIL_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CIL_h
+    :project: CosmOS
+

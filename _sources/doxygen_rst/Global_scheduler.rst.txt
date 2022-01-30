@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_scheduler
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_scheduler_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_scheduler_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_scheduler_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_scheduler_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_scheduler_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_scheduler_h
+    :project: CosmOS
+

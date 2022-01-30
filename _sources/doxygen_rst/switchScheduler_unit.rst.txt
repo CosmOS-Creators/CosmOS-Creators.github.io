@@ -1,0 +1,12 @@
+switchScheduler Unit
+====================
+
+.. toctree::
+    :caption: switchScheduler Unit:
+    :maxdepth: 1
+
+    Global_switchScheduler
+
+.. doxygengroup:: switchScheduler_unit
+    :project: CosmOS
+

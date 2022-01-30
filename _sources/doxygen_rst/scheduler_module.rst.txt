@@ -1,0 +1,16 @@
+scheduler
+=========
+
+.. toctree::
+    :caption: scheduler:
+    :maxdepth: 1
+
+    scheduler_unit
+    schedulerSync_unit
+    schedulerCfg_unit
+    schedulerScheduleTableCfg_unit
+    schedulerThreadListCfg_unit
+
+.. doxygengroup:: scheduler_module
+    :project: CosmOS
+

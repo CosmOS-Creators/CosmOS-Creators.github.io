@@ -1,0 +1,12 @@
+sysDefsBuffers Unit
+===================
+
+.. toctree::
+    :caption: sysDefsBuffers Unit:
+    :maxdepth: 1
+
+    Global_sysDefsBuffers
+
+.. doxygengroup:: sysDefsBuffers_unit
+    :project: CosmOS
+

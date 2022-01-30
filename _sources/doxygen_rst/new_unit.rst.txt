@@ -1,0 +1,13 @@
+new Unit
+========
+
+.. toctree::
+    :caption: new Unit:
+    :maxdepth: 1
+
+    Global_new
+    Local_new
+
+.. doxygengroup:: new_unit
+    :project: CosmOS
+

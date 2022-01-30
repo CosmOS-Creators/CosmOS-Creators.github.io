@@ -1,0 +1,13 @@
+mutex Unit
+==========
+
+.. toctree::
+    :caption: mutex Unit:
+    :maxdepth: 1
+
+    Global_mutex
+    Local_mutex
+
+.. doxygengroup:: mutex_unit
+    :project: CosmOS
+

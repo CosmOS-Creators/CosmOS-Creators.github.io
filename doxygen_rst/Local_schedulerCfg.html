@@ -1,0 +1,1085 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="schedulerScheduleTableCfg Unit" href="schedulerScheduleTableCfg_unit.html" /><link rel="prev" title="Global" href="Global_schedulerCfg.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><meta name="generator" content="sphinx-4.3.2, furo 2021.11.23"/>
+        <title>Local - CosmOS documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=7f0192ddeb2adecfbaa87ffbcf67d16358b30bc1" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=0af69da206d614734f649b27d4cdc2dd6c31f41d" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">CosmOS  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/cosmosWhite.png" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/about.html">About</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/motivation.html">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/architecture.html">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/softwareLayers.html">Software layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/mainFeatures.html">Main features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/workflow.html">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/roadmap.html">Roadmap</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/about/releaseNotes.html">Release notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/about/releaseNotes/preAlpha.html">Pre-alpha</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/about/whitepaper.html">Whitepaper</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/whatIs.html">What is</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/whatIs/referenceProject.html">Reference project</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/whatIs/referenceProject/structure.html">Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/whatIs/referenceProject/hardware.html">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/whatIs/referenceProject/configuration.html">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/whatIs/referenceProject/examplePrograms.html">Example Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/whatIs/referenceProject/measurements.html">Measurements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/whatIs/dockerDevEnvironment.html">Docker dev environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/whatIs/gtest.html">Google test</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/howTo.html">How to</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/howTo/setupReferenceProject.html">Setup reference project</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/howTo/setupReferenceProject/vsCode.html">Visual Studio Code</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/vsCode/setup.html">Development environment setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/vsCode/compiling.html">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/vsCode/debugging.html">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/vsCode/logger.html">Logger</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/howTo/setupReferenceProject/stmIde.html">STM32 Cube IDE</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/stmIde/import.html">Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/stmIde/compiling.html">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/stmIde/debugging.html">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/stmIde/logger.html">Logger</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/howTo/setupReferenceProject/configuration.html">Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/configuration/workspace.html">Workspace and file generation config files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/setupReferenceProject/configuration/genericJson.html">Generic json file structure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/howTo/setupReferenceProject/tcpEcho.html">TCP Echo</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/howTo/useIt.html">Use CosmOS in your project</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/howTo/useIt/integration.html">Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/howTo/useIt/application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/howTo/useIt/supportedHardware.html">Supported hardware</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/howTo/contribute.html">Contribute</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/howTo/contribute/c.html">C</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/contribute/c/functional.html">Functional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/contribute/c/tests.html">Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/contribute/c/runTests.html">Run tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/howTo/contribute/python.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/contribute/python/functional.html">Functional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/contribute/python/tests.html">Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/howTo/contribute/python/runTests.html">Run tests</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/howTo/contribute/continuousIntegration.html">Continuous integration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/howTo/reportBug.html">Report a bug</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../sites/documentation.html">Documentation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../sites/documentation/cosmos.html">CosmOS</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../sites/documentation/cosmos/core.html">Core</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 current has-children"><a class="reference internal" href="core_modules.html">Core Modules</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l5 has-children"><a class="reference internal" href="alarm_module.html">alarm</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="alarm_unit.html">alarm Unit</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_alarm.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_alarm.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="alarmCfg_unit.html">alarmCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_alarmCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_alarmCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="buffer_module.html">buffer</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="buffer_unit.html">buffer Unit</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" role="switch" type="checkbox"/><label for="toctree-checkbox-22"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_buffer.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_buffer.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="bufferDouble_unit.html">bufferDouble Unit</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" role="switch" type="checkbox"/><label for="toctree-checkbox-23"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_bufferDouble.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_bufferDouble.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="bufferCfg_unit.html">bufferCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" role="switch" type="checkbox"/><label for="toctree-checkbox-24"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_bufferCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_bufferCfg.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="bufferDoubleCfg_unit.html">bufferDoubleCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" role="switch" type="checkbox"/><label for="toctree-checkbox-25"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_bufferDoubleCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_bufferDoubleCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="channel_module.html">channel</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" role="switch" type="checkbox"/><label for="toctree-checkbox-26"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="channel_unit.html">channel Unit</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" role="switch" type="checkbox"/><label for="toctree-checkbox-27"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_channel.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_channel.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="channelCfg_unit.html">channelCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" role="switch" type="checkbox"/><label for="toctree-checkbox-28"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_channelCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_channelCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="core_module.html">core</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" role="switch" type="checkbox"/><label for="toctree-checkbox-29"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="core_unit.html">Core Unit</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" role="switch" type="checkbox"/><label for="toctree-checkbox-30"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_core.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_core.html">Local</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Test_core.html">Test</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="coreSync_unit.html">coreSync Unit</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" role="switch" type="checkbox"/><label for="toctree-checkbox-31"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_coreSync.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_coreSync.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="coreCfg_unit.html">coreCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" role="switch" type="checkbox"/><label for="toctree-checkbox-32"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_coreCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_coreCfg.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="coreSyncCfg_unit.html">coreSyncCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" role="switch" type="checkbox"/><label for="toctree-checkbox-33"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_coreSyncCfg.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="cosmosApiInternal_module.html">cosmosApiInternal</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" role="switch" type="checkbox"/><label for="toctree-checkbox-34"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosApiInternal_unit.html">cosmosApiInternal Unit</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" role="switch" type="checkbox"/><label for="toctree-checkbox-35"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosApiInternal.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="cosmosApi_module.html">cosmosApi</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" role="switch" type="checkbox"/><label for="toctree-checkbox-36"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosApi_unit.html">cosmosApi Unit</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" role="switch" type="checkbox"/><label for="toctree-checkbox-37"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosApi.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="cosmosAssert_module.html">cosmosAssert</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" role="switch" type="checkbox"/><label for="toctree-checkbox-38"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosAssert_unit.html">cosmosAssert Unit</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" role="switch" type="checkbox"/><label for="toctree-checkbox-39"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosAssert.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_cosmosAssert.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="cosmosTypes_module.html">cosmosTypes</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" role="switch" type="checkbox"/><label for="toctree-checkbox-40"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosTypes_unit.html">cosmosTypes Unit</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" role="switch" type="checkbox"/><label for="toctree-checkbox-41"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosTypes.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosTypesCfg_unit.html">cosmosTypesCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" role="switch" type="checkbox"/><label for="toctree-checkbox-42"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosTypesCfg.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosTypesMacros_unit.html">cosmosTypesMacros Unit</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" role="switch" type="checkbox"/><label for="toctree-checkbox-43"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosTypesMacros.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosTypesStd_unit.html">cosmosTypesStd Unit</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" role="switch" type="checkbox"/><label for="toctree-checkbox-44"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosTypesStd.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="cosmosTypesVar_unit.html">cosmosTypesVar Unit</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" role="switch" type="checkbox"/><label for="toctree-checkbox-45"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_cosmosTypesVar.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="errorHandler_module.html">errorHandler</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" role="switch" type="checkbox"/><label for="toctree-checkbox-46"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="errorHandler_unit.html">errorHandler Unit</a><input class="toctree-checkbox" id="toctree-checkbox-47" name="toctree-checkbox-47" role="switch" type="checkbox"/><label for="toctree-checkbox-47"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_errorHandler.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_errorHandler.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="heap_module.html">heap</a><input class="toctree-checkbox" id="toctree-checkbox-48" name="toctree-checkbox-48" role="switch" type="checkbox"/><label for="toctree-checkbox-48"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="heap_unit.html">heap Unit</a><input class="toctree-checkbox" id="toctree-checkbox-49" name="toctree-checkbox-49" role="switch" type="checkbox"/><label for="toctree-checkbox-49"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_heap.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_heap.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="heapCfg_unit.html">heapCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-50" name="toctree-checkbox-50" role="switch" type="checkbox"/><label for="toctree-checkbox-50"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_heapCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_heapCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="interrupt_module.html">interrupt</a><input class="toctree-checkbox" id="toctree-checkbox-51" name="toctree-checkbox-51" role="switch" type="checkbox"/><label for="toctree-checkbox-51"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="interrupt_unit.html">interrupt Unit</a><input class="toctree-checkbox" id="toctree-checkbox-52" name="toctree-checkbox-52" role="switch" type="checkbox"/><label for="toctree-checkbox-52"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_interrupt.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_interrupt.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="interruptCfg_unit.html">interruptCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-53" name="toctree-checkbox-53" role="switch" type="checkbox"/><label for="toctree-checkbox-53"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_interruptCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_interruptCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="memory_module.html">memory</a><input class="toctree-checkbox" id="toctree-checkbox-54" name="toctree-checkbox-54" role="switch" type="checkbox"/><label for="toctree-checkbox-54"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="memory_unit.html">memory Unit</a><input class="toctree-checkbox" id="toctree-checkbox-55" name="toctree-checkbox-55" role="switch" type="checkbox"/><label for="toctree-checkbox-55"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_memory.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_memory.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="memoryManager_unit.html">memoryManager Unit</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" role="switch" type="checkbox"/><label for="toctree-checkbox-56"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_memoryManager.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_memoryManager.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="memoryProtection_unit.html">memoryProtection Unit</a><input class="toctree-checkbox" id="toctree-checkbox-57" name="toctree-checkbox-57" role="switch" type="checkbox"/><label for="toctree-checkbox-57"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_memoryProtection.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_memoryProtection.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="memoryMapping_unit.html">memoryMapping Unit</a><input class="toctree-checkbox" id="toctree-checkbox-58" name="toctree-checkbox-58" role="switch" type="checkbox"/><label for="toctree-checkbox-58"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_memoryMapping.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="mutex_module.html">mutex</a><input class="toctree-checkbox" id="toctree-checkbox-59" name="toctree-checkbox-59" role="switch" type="checkbox"/><label for="toctree-checkbox-59"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="mutex_unit.html">mutex Unit</a><input class="toctree-checkbox" id="toctree-checkbox-60" name="toctree-checkbox-60" role="switch" type="checkbox"/><label for="toctree-checkbox-60"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_mutex.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_mutex.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="mutexCfg_unit.html">mutexCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-61" name="toctree-checkbox-61" role="switch" type="checkbox"/><label for="toctree-checkbox-61"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_mutexCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_mutexCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="os_module.html">os</a><input class="toctree-checkbox" id="toctree-checkbox-62" name="toctree-checkbox-62" role="switch" type="checkbox"/><label for="toctree-checkbox-62"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="os_unit.html">os Unit</a><input class="toctree-checkbox" id="toctree-checkbox-63" name="toctree-checkbox-63" role="switch" type="checkbox"/><label for="toctree-checkbox-63"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_os.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_os.html">Local</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Test_os.html">Test</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="osBoot_unit.html">osBoot Unit</a><input class="toctree-checkbox" id="toctree-checkbox-64" name="toctree-checkbox-64" role="switch" type="checkbox"/><label for="toctree-checkbox-64"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_osBoot.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_osBoot.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="osEvent_unit.html">osEvent Unit</a><input class="toctree-checkbox" id="toctree-checkbox-65" name="toctree-checkbox-65" role="switch" type="checkbox"/><label for="toctree-checkbox-65"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_osEvent.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_osEvent.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="osInit_unit.html">osInit Unit</a><input class="toctree-checkbox" id="toctree-checkbox-66" name="toctree-checkbox-66" role="switch" type="checkbox"/><label for="toctree-checkbox-66"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_osInit.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_osInit.html">Local</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Test_osInit.html">Test</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="osBootCfg_unit.html">osBootCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-67" name="toctree-checkbox-67" role="switch" type="checkbox"/><label for="toctree-checkbox-67"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_osBootCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_osBootCfg.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="osCfg_unit.html">osCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-68" name="toctree-checkbox-68" role="switch" type="checkbox"/><label for="toctree-checkbox-68"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_osCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_osCfg.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="osEventCfg_unit.html">osEventCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-69" name="toctree-checkbox-69" role="switch" type="checkbox"/><label for="toctree-checkbox-69"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_osEventCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_osEventCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="permission_module.html">permission</a><input class="toctree-checkbox" id="toctree-checkbox-70" name="toctree-checkbox-70" role="switch" type="checkbox"/><label for="toctree-checkbox-70"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="permission_unit.html">permission Unit</a><input class="toctree-checkbox" id="toctree-checkbox-71" name="toctree-checkbox-71" role="switch" type="checkbox"/><label for="toctree-checkbox-71"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_permission.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_permission.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="permissionCfg_unit.html">permissionCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-72" name="toctree-checkbox-72" role="switch" type="checkbox"/><label for="toctree-checkbox-72"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_permissionCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_permissionCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="program_module.html">program</a><input class="toctree-checkbox" id="toctree-checkbox-73" name="toctree-checkbox-73" role="switch" type="checkbox"/><label for="toctree-checkbox-73"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="program_unit.html">program Unit</a><input class="toctree-checkbox" id="toctree-checkbox-74" name="toctree-checkbox-74" role="switch" type="checkbox"/><label for="toctree-checkbox-74"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_program.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_program.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="programCfg_unit.html">programCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-75" name="toctree-checkbox-75" role="switch" type="checkbox"/><label for="toctree-checkbox-75"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_programCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_programCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="route_module.html">route</a><input class="toctree-checkbox" id="toctree-checkbox-76" name="toctree-checkbox-76" role="switch" type="checkbox"/><label for="toctree-checkbox-76"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="route_unit.html">route Unit</a><input class="toctree-checkbox" id="toctree-checkbox-77" name="toctree-checkbox-77" role="switch" type="checkbox"/><label for="toctree-checkbox-77"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_route.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_route.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="routeCfg_unit.html">routeCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-78" name="toctree-checkbox-78" role="switch" type="checkbox"/><label for="toctree-checkbox-78"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_routeCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_routeCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="schedulable_module.html">schedulable</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" role="switch" type="checkbox"/><label for="toctree-checkbox-79"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="schedulable_unit.html">schedulable Unit</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" role="switch" type="checkbox"/><label for="toctree-checkbox-80"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_schedulable.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_schedulable.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="schedulableCfg_unit.html">schedulableCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" role="switch" type="checkbox"/><label for="toctree-checkbox-81"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_schedulableCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_schedulableCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 current has-children"><a class="reference internal" href="scheduler_module.html">scheduler</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" role="switch" type="checkbox"/><label for="toctree-checkbox-82"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l6 has-children"><a class="reference internal" href="scheduler_unit.html">scheduler Unit</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" role="switch" type="checkbox"/><label for="toctree-checkbox-83"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_scheduler.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_scheduler.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="schedulerSync_unit.html">schedulerSync Unit</a><input class="toctree-checkbox" id="toctree-checkbox-84" name="toctree-checkbox-84" role="switch" type="checkbox"/><label for="toctree-checkbox-84"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_schedulerSync.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_schedulerSync.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 current has-children"><a class="reference internal" href="schedulerCfg_unit.html">schedulerCfg Unit</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-85" name="toctree-checkbox-85" role="switch" type="checkbox"/><label for="toctree-checkbox-85"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l7"><a class="reference internal" href="Global_schedulerCfg.html">Global</a></li>
+<li class="toctree-l7 current current-page"><a class="current reference internal" href="#">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="schedulerScheduleTableCfg_unit.html">schedulerScheduleTableCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-86" name="toctree-checkbox-86" role="switch" type="checkbox"/><label for="toctree-checkbox-86"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_schedulerScheduleTableCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_schedulerScheduleTableCfg.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="schedulerThreadListCfg_unit.html">schedulerThreadListCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-87" name="toctree-checkbox-87" role="switch" type="checkbox"/><label for="toctree-checkbox-87"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_schedulerThreadListCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_schedulerThreadListCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="semaphore_module.html">semaphore</a><input class="toctree-checkbox" id="toctree-checkbox-88" name="toctree-checkbox-88" role="switch" type="checkbox"/><label for="toctree-checkbox-88"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="semaphore_unit.html">semaphore Unit</a><input class="toctree-checkbox" id="toctree-checkbox-89" name="toctree-checkbox-89" role="switch" type="checkbox"/><label for="toctree-checkbox-89"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_semaphore.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_semaphore.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="semaphoreCfg_unit.html">semaphoreCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-90" name="toctree-checkbox-90" role="switch" type="checkbox"/><label for="toctree-checkbox-90"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_semaphoreCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_semaphoreCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="spinlock_module.html">spinlock</a><input class="toctree-checkbox" id="toctree-checkbox-91" name="toctree-checkbox-91" role="switch" type="checkbox"/><label for="toctree-checkbox-91"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="spinlock_unit.html">spinlock Unit</a><input class="toctree-checkbox" id="toctree-checkbox-92" name="toctree-checkbox-92" role="switch" type="checkbox"/><label for="toctree-checkbox-92"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_spinlock.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_spinlock.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="spinlockCfg_unit.html">spinlockCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-93" name="toctree-checkbox-93" role="switch" type="checkbox"/><label for="toctree-checkbox-93"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_spinlockCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_spinlockCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="stack_module.html">stack</a><input class="toctree-checkbox" id="toctree-checkbox-94" name="toctree-checkbox-94" role="switch" type="checkbox"/><label for="toctree-checkbox-94"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="stack_unit.html">stack Unit</a><input class="toctree-checkbox" id="toctree-checkbox-95" name="toctree-checkbox-95" role="switch" type="checkbox"/><label for="toctree-checkbox-95"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_stack.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_stack.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="stackInit_unit.html">stackInit Unit</a><input class="toctree-checkbox" id="toctree-checkbox-96" name="toctree-checkbox-96" role="switch" type="checkbox"/><label for="toctree-checkbox-96"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_stackInit.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_stackInit.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="stackCfg_unit.html">stackCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-97" name="toctree-checkbox-97" role="switch" type="checkbox"/><label for="toctree-checkbox-97"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_stackCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_stackCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="support_module.html">support</a><input class="toctree-checkbox" id="toctree-checkbox-98" name="toctree-checkbox-98" role="switch" type="checkbox"/><label for="toctree-checkbox-98"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="new_unit.html">new Unit</a><input class="toctree-checkbox" id="toctree-checkbox-99" name="toctree-checkbox-99" role="switch" type="checkbox"/><label for="toctree-checkbox-99"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_new.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_new.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="support_unit.html">support Unit</a><input class="toctree-checkbox" id="toctree-checkbox-100" name="toctree-checkbox-100" role="switch" type="checkbox"/><label for="toctree-checkbox-100"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_support.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="supportStdio_unit.html">supportStdio Unit</a><input class="toctree-checkbox" id="toctree-checkbox-101" name="toctree-checkbox-101" role="switch" type="checkbox"/><label for="toctree-checkbox-101"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_supportStdio.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_supportStdio.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="supportStdlib_unit.html">supportStdlib Unit</a><input class="toctree-checkbox" id="toctree-checkbox-102" name="toctree-checkbox-102" role="switch" type="checkbox"/><label for="toctree-checkbox-102"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_supportStdlib.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_supportStdlib.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="switch_module.html">switch</a><input class="toctree-checkbox" id="toctree-checkbox-103" name="toctree-checkbox-103" role="switch" type="checkbox"/><label for="toctree-checkbox-103"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="switch_unit.html">switch Unit</a><input class="toctree-checkbox" id="toctree-checkbox-104" name="toctree-checkbox-104" role="switch" type="checkbox"/><label for="toctree-checkbox-104"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_switch.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="switchMemoryProtection_unit.html">switchMemoryProtection Unit</a><input class="toctree-checkbox" id="toctree-checkbox-105" name="toctree-checkbox-105" role="switch" type="checkbox"/><label for="toctree-checkbox-105"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_switchMemoryProtection.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="switchScheduler_unit.html">switchScheduler Unit</a><input class="toctree-checkbox" id="toctree-checkbox-106" name="toctree-checkbox-106" role="switch" type="checkbox"/><label for="toctree-checkbox-106"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_switchScheduler.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="switchSchedulerSync_unit.html">switchSchedulerSync Unit</a><input class="toctree-checkbox" id="toctree-checkbox-107" name="toctree-checkbox-107" role="switch" type="checkbox"/><label for="toctree-checkbox-107"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_switchSchedulerSync.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="sysCalls_module.html">sysCalls</a><input class="toctree-checkbox" id="toctree-checkbox-108" name="toctree-checkbox-108" role="switch" type="checkbox"/><label for="toctree-checkbox-108"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysCalls_unit.html">sysCalls Unit</a><input class="toctree-checkbox" id="toctree-checkbox-109" name="toctree-checkbox-109" role="switch" type="checkbox"/><label for="toctree-checkbox-109"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysCalls.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_sysCalls.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="sysDefs_module.html">sysDefs</a><input class="toctree-checkbox" id="toctree-checkbox-110" name="toctree-checkbox-110" role="switch" type="checkbox"/><label for="toctree-checkbox-110"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefs_unit.html">sysDefs Unit</a><input class="toctree-checkbox" id="toctree-checkbox-111" name="toctree-checkbox-111" role="switch" type="checkbox"/><label for="toctree-checkbox-111"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefs.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsThreads_unit.html">sysDefsThreads Unit</a><input class="toctree-checkbox" id="toctree-checkbox-112" name="toctree-checkbox-112" role="switch" type="checkbox"/><label for="toctree-checkbox-112"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsThreads.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsBarriers_unit.html">sysDefsBarriers Unit</a><input class="toctree-checkbox" id="toctree-checkbox-113" name="toctree-checkbox-113" role="switch" type="checkbox"/><label for="toctree-checkbox-113"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsBarriers.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsBuffers_unit.html">sysDefsBuffers Unit</a><input class="toctree-checkbox" id="toctree-checkbox-114" name="toctree-checkbox-114" role="switch" type="checkbox"/><label for="toctree-checkbox-114"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsBuffers.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsBuffersDouble_unit.html">sysDefsBuffersDouble Unit</a><input class="toctree-checkbox" id="toctree-checkbox-115" name="toctree-checkbox-115" role="switch" type="checkbox"/><label for="toctree-checkbox-115"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsBuffersDouble.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsChannels_unit.html">sysDefsChannels Unit</a><input class="toctree-checkbox" id="toctree-checkbox-116" name="toctree-checkbox-116" role="switch" type="checkbox"/><label for="toctree-checkbox-116"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsChannels.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsCores_unit.html">sysDefsCores Unit</a><input class="toctree-checkbox" id="toctree-checkbox-117" name="toctree-checkbox-117" role="switch" type="checkbox"/><label for="toctree-checkbox-117"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsCores.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsHeaps_unit.html">sysDefsHeaps Unit</a><input class="toctree-checkbox" id="toctree-checkbox-118" name="toctree-checkbox-118" role="switch" type="checkbox"/><label for="toctree-checkbox-118"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsHeaps.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsInterrupt_unit.html">sysDefsInterrupt Unit</a><input class="toctree-checkbox" id="toctree-checkbox-119" name="toctree-checkbox-119" role="switch" type="checkbox"/><label for="toctree-checkbox-119"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsInterrupt.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsOsBoot_unit.html">sysDefsOsBoot Unit</a><input class="toctree-checkbox" id="toctree-checkbox-120" name="toctree-checkbox-120" role="switch" type="checkbox"/><label for="toctree-checkbox-120"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsOsBoot.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsOsEvents_unit.html">sysDefsOsEvents Unit</a><input class="toctree-checkbox" id="toctree-checkbox-121" name="toctree-checkbox-121" role="switch" type="checkbox"/><label for="toctree-checkbox-121"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsOsEvents.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsPermissions_unit.html">sysDefsPermissions Unit</a><input class="toctree-checkbox" id="toctree-checkbox-122" name="toctree-checkbox-122" role="switch" type="checkbox"/><label for="toctree-checkbox-122"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsPermissions.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsPrograms_unit.html">sysDefsPrograms Unit</a><input class="toctree-checkbox" id="toctree-checkbox-123" name="toctree-checkbox-123" role="switch" type="checkbox"/><label for="toctree-checkbox-123"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsPrograms.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsRoutes_unit.html">sysDefsRoutes Unit</a><input class="toctree-checkbox" id="toctree-checkbox-124" name="toctree-checkbox-124" role="switch" type="checkbox"/><label for="toctree-checkbox-124"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsRoutes.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsSchedulables_unit.html">sysDefsSchedulables Unit</a><input class="toctree-checkbox" id="toctree-checkbox-125" name="toctree-checkbox-125" role="switch" type="checkbox"/><label for="toctree-checkbox-125"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsSchedulables.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsSchedulers_unit.html">sysDefsSchedulers Unit</a><input class="toctree-checkbox" id="toctree-checkbox-126" name="toctree-checkbox-126" role="switch" type="checkbox"/><label for="toctree-checkbox-126"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsSchedulers.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsSchedulerThreadLists_unit.html">sysDefsSchedulerThreadLists Unit</a><input class="toctree-checkbox" id="toctree-checkbox-127" name="toctree-checkbox-127" role="switch" type="checkbox"/><label for="toctree-checkbox-127"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsSchedulerThreadLists.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsScheduleTables_unit.html">sysDefsScheduleTables Unit</a><input class="toctree-checkbox" id="toctree-checkbox-128" name="toctree-checkbox-128" role="switch" type="checkbox"/><label for="toctree-checkbox-128"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsScheduleTables.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsSemaphores_unit.html">sysDefsSemaphores Unit</a><input class="toctree-checkbox" id="toctree-checkbox-129" name="toctree-checkbox-129" role="switch" type="checkbox"/><label for="toctree-checkbox-129"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsSemaphores.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsSpinlocks_unit.html">sysDefsSpinlocks Unit</a><input class="toctree-checkbox" id="toctree-checkbox-130" name="toctree-checkbox-130" role="switch" type="checkbox"/><label for="toctree-checkbox-130"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsSpinlocks.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsStacks_unit.html">sysDefsStacks Unit</a><input class="toctree-checkbox" id="toctree-checkbox-131" name="toctree-checkbox-131" role="switch" type="checkbox"/><label for="toctree-checkbox-131"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsStacks.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsSysJobs_unit.html">sysDefsSysJobs Unit</a><input class="toctree-checkbox" id="toctree-checkbox-132" name="toctree-checkbox-132" role="switch" type="checkbox"/><label for="toctree-checkbox-132"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsSysJobs.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysDefsTasks_unit.html">sysDefsTasks Unit</a><input class="toctree-checkbox" id="toctree-checkbox-133" name="toctree-checkbox-133" role="switch" type="checkbox"/><label for="toctree-checkbox-133"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysDefsTasks.html">Global</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="sysJobs_module.html">sysJobs</a><input class="toctree-checkbox" id="toctree-checkbox-134" name="toctree-checkbox-134" role="switch" type="checkbox"/><label for="toctree-checkbox-134"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysJobs_unit.html">sysJobs Unit</a><input class="toctree-checkbox" id="toctree-checkbox-135" name="toctree-checkbox-135" role="switch" type="checkbox"/><label for="toctree-checkbox-135"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysJobs.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_sysJobs.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="sysJobsCfg_unit.html">sysJobsCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-136" name="toctree-checkbox-136" role="switch" type="checkbox"/><label for="toctree-checkbox-136"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_sysJobsCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_sysJobsCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="task_module.html">task</a><input class="toctree-checkbox" id="toctree-checkbox-137" name="toctree-checkbox-137" role="switch" type="checkbox"/><label for="toctree-checkbox-137"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="task_unit.html">task Unit</a><input class="toctree-checkbox" id="toctree-checkbox-138" name="toctree-checkbox-138" role="switch" type="checkbox"/><label for="toctree-checkbox-138"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_task.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_task.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="taskCfg_unit.html">taskCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-139" name="toctree-checkbox-139" role="switch" type="checkbox"/><label for="toctree-checkbox-139"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_taskCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_taskCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="thread_module.html">thread</a><input class="toctree-checkbox" id="toctree-checkbox-140" name="toctree-checkbox-140" role="switch" type="checkbox"/><label for="toctree-checkbox-140"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="thread_unit.html">thread Unit</a><input class="toctree-checkbox" id="toctree-checkbox-141" name="toctree-checkbox-141" role="switch" type="checkbox"/><label for="toctree-checkbox-141"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_thread.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_thread.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="threadCfg_unit.html">threadCfg Unit</a><input class="toctree-checkbox" id="toctree-checkbox-142" name="toctree-checkbox-142" role="switch" type="checkbox"/><label for="toctree-checkbox-142"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_threadCfg.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_threadCfg.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/documentation/cosmos/integration.html">Integration of the STM32H755ZI MCU</a><input class="toctree-checkbox" id="toctree-checkbox-143" name="toctree-checkbox-143" role="switch" type="checkbox"/><label for="toctree-checkbox-143"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="integration_modules.html">Integration Modules</a><input class="toctree-checkbox" id="toctree-checkbox-144" name="toctree-checkbox-144" role="switch" type="checkbox"/><label for="toctree-checkbox-144"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5 has-children"><a class="reference internal" href="CIL_module.html">CIL</a><input class="toctree-checkbox" id="toctree-checkbox-145" name="toctree-checkbox-145" role="switch" type="checkbox"/><label for="toctree-checkbox-145"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CIL_unit.html">CIL Unit</a><input class="toctree-checkbox" id="toctree-checkbox-146" name="toctree-checkbox-146" role="switch" type="checkbox"/><label for="toctree-checkbox-146"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CIL.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILbaseTypes_unit.html">CILbaseTypes Unit</a><input class="toctree-checkbox" id="toctree-checkbox-147" name="toctree-checkbox-147" role="switch" type="checkbox"/><label for="toctree-checkbox-147"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILbaseTypes.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILcore_unit.html">CILcore Unit</a><input class="toctree-checkbox" id="toctree-checkbox-148" name="toctree-checkbox-148" role="switch" type="checkbox"/><label for="toctree-checkbox-148"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILcore.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILcore.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILinterrupt_unit.html">CILinterrupt Unit</a><input class="toctree-checkbox" id="toctree-checkbox-149" name="toctree-checkbox-149" role="switch" type="checkbox"/><label for="toctree-checkbox-149"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILinterrupt.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILinterrupt.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILmacros_unit.html">CILmacros Unit</a><input class="toctree-checkbox" id="toctree-checkbox-150" name="toctree-checkbox-150" role="switch" type="checkbox"/><label for="toctree-checkbox-150"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILmacros.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILmemoryProtection_unit.html">CILmemoryProtection Unit</a><input class="toctree-checkbox" id="toctree-checkbox-151" name="toctree-checkbox-151" role="switch" type="checkbox"/><label for="toctree-checkbox-151"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILmemoryProtection.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILmemoryProtection.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILmutex_unit.html">CILmutex Unit</a><input class="toctree-checkbox" id="toctree-checkbox-152" name="toctree-checkbox-152" role="switch" type="checkbox"/><label for="toctree-checkbox-152"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILmutex.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILmutex.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILsemaphore_unit.html">CILsemaphore Unit</a><input class="toctree-checkbox" id="toctree-checkbox-153" name="toctree-checkbox-153" role="switch" type="checkbox"/><label for="toctree-checkbox-153"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILsemaphore.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILsemaphore.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILspinlock_unit.html">CILspinlock Unit</a><input class="toctree-checkbox" id="toctree-checkbox-154" name="toctree-checkbox-154" role="switch" type="checkbox"/><label for="toctree-checkbox-154"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILspinlock.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILspinlock.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILstack_unit.html">CILstack Unit</a><input class="toctree-checkbox" id="toctree-checkbox-155" name="toctree-checkbox-155" role="switch" type="checkbox"/><label for="toctree-checkbox-155"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILstack.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILstack.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILstdTypes_unit.html">CILstdTypes Unit</a><input class="toctree-checkbox" id="toctree-checkbox-156" name="toctree-checkbox-156" role="switch" type="checkbox"/><label for="toctree-checkbox-156"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILstdTypes.html">Global</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILsysCalls_unit.html">CILsysCalls Unit</a><input class="toctree-checkbox" id="toctree-checkbox-157" name="toctree-checkbox-157" role="switch" type="checkbox"/><label for="toctree-checkbox-157"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILsysCalls.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILsysCalls.html">Local</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="CILsysTimer_unit.html">CILsysTimer Unit</a><input class="toctree-checkbox" id="toctree-checkbox-158" name="toctree-checkbox-158" role="switch" type="checkbox"/><label for="toctree-checkbox-158"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="Global_CILsysTimer.html">Global</a></li>
+<li class="toctree-l7"><a class="reference internal" href="Local_CILsysTimer.html">Local</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/documentation/customBox.html">CustomBox</a><input class="toctree-checkbox" id="toctree-checkbox-159" name="toctree-checkbox-159" role="switch" type="checkbox"/><label for="toctree-checkbox-159"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../sites/documentation/customBox/parser.html">Parser</a><input class="toctree-checkbox" id="toctree-checkbox-160" name="toctree-checkbox-160" role="switch" type="checkbox"/><label for="toctree-checkbox-160"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sites/documentation/customBox/parser/config_files.html">Parser configuration files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/documentation/customBox/parser/links.html">Linking configs, elements and attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sites/documentation/customBox/parser/constants.html">Parser constants definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/documentation/customBox/logicRunners.html">Logic Runners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/documentation/customBox/generator.html">Generator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/demo.html">Demo</a><input class="toctree-checkbox" id="toctree-checkbox-161" name="toctree-checkbox-161" role="switch" type="checkbox"/><label for="toctree-checkbox-161"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/demo/dataExchangeInterface.html">Data exchange interface</a><input class="toctree-checkbox" id="toctree-checkbox-162" name="toctree-checkbox-162" role="switch" type="checkbox"/><label for="toctree-checkbox-162"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/dataExchangeInterface/buffer.html">Buffer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/dataExchangeInterface/channel.html">Channel</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/demo/memory.html">Memory</a><input class="toctree-checkbox" id="toctree-checkbox-163" name="toctree-checkbox-163" role="switch" type="checkbox"/><label for="toctree-checkbox-163"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/memory/mapping.html">Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/memory/protection.html">Protection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/memory/dynamicAllocation.html">Dynamic allocation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/demo/scheduling.html">Scheduling</a><input class="toctree-checkbox" id="toctree-checkbox-164" name="toctree-checkbox-164" role="switch" type="checkbox"/><label for="toctree-checkbox-164"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/scheduling/classic.html">Classic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/scheduling/performance.html">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/scheduling/hybrid.html">Hybrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/scheduling/sleep.html">Sleep</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/demo/systemJobs.html">System jobs</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/demo/synchronizationPrimitives.html">Synchronization primitives</a><input class="toctree-checkbox" id="toctree-checkbox-165" name="toctree-checkbox-165" role="switch" type="checkbox"/><label for="toctree-checkbox-165"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/synchronizationPrimitives/mutex.html">Mutex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/synchronizationPrimitives/semaphore.html">Semaphore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/synchronizationPrimitives/spinlock.html">Spinlock</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../sites/demo/program.html">Program</a><input class="toctree-checkbox" id="toctree-checkbox-166" name="toctree-checkbox-166" role="switch" type="checkbox"/><label for="toctree-checkbox-166"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/program/task.html">Task</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sites/demo/program/thread.html">Thread</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/demo/event.html">Event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/demo/errorHandler.html">Error handler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/demo/interrupt.html">Interrupt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/demo/route.html">SysCall Routes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/demo/switch.html">Switch</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/kudos.html">Kudos</a><input class="toctree-checkbox" id="toctree-checkbox-167" name="toctree-checkbox-167" role="switch" type="checkbox"/><label for="toctree-checkbox-167"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sites/kudos/topContributors.html">Top contributors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/kudos/companyDonors.html">Company donors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/kudos/recurringDonors.html">Recurring donors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sites/kudos/oneTimeDonors.html">One time donors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sites/supportTheIdea.html">Support the idea</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/community.html">Community</a><input class="toctree-checkbox" id="toctree-checkbox-168" name="toctree-checkbox-168" role="switch" type="checkbox"/><label for="toctree-checkbox-168"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference external" href="https://discord.gg/XTabzYYVxS">Discord</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sites/socials.html">Socials</a><input class="toctree-checkbox" id="toctree-checkbox-169" name="toctree-checkbox-169" role="switch" type="checkbox"/><label for="toctree-checkbox-169"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference external" href="https://www.linkedin.com/company/cosmoscreators">LinkedIn</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://twitter.com/cosmos_creators">Twitter</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://www.youtube.com/channel/UCWSxT8kLvbVGm-9HlEyiRUg">YouTube</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sites/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/CosmOS-Creators">GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sites/faq.html">FAQ</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <div class="section" id="local">
+<h1>Local<a class="headerlink" href="#local" title="Permalink to this headline">¶</a></h1>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___local__scheduler_cfg"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">Local_schedulerCfg</span></span></dt>
+<dd><p>schedulerCfg locals </p>
+<p>lorem </p>
+</dd></dl>
+<div class="section" id="macros">
+<h2>Macros<a class="headerlink" href="#macros" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___macros__scheduler_cfg__c"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">Macros_schedulerCfg_c</span></span></dt>
+<dd></dd></dl>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___variables__scheduler_cfg__c"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">Variables_schedulerCfg_c</span></span></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="group___variables__scheduler_cfg__c_1ga1d4d4ca1e1420d8c778f07202c37244b"></span><span class="sig-name descname"><span class="pre">CosmOS_SchedulerVariableType</span> <span class="pre">SchedulersVar[SCHEDULER_NUM]</span> <span class="pre">__OS_VARS_SECTION</span> <span class="pre">IS_INITIALIZED_TO</span>  <span class="pre">{{RESCHEDULE_TRIGGER_STATE_ENUM__SYSTEM,0,0,0,0,SCHEDULER_STATE_ENUM__NOT_STARTED,0,False,0,},{RESCHEDULE_TRIGGER_STATE_ENUM__SYSTEM,0,0,0,0,SCHEDULER_STATE_ENUM__NOT_STARTED,0,False,0,},}</span></span></dt>
+<dd></dd></dl>
+</div>
+</dd></dl>
+</div>
+<div class="section" id="api-s">
+<h2>API’s<a class="headerlink" href="#api-s" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___apis__scheduler_cfg__c"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">Apis_schedulerCfg_c</span></span></dt>
+<dd></dd></dl>
+<div class="section" id="getters">
+<h3>Getters<a class="headerlink" href="#getters" title="Permalink to this headline">¶</a></h3>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___getters__scheduler_cfg__c"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">Getters_schedulerCfg_c</span></span></dt>
+<dd></dd></dl>
+</div>
+<div class="section" id="setters">
+<h3>Setters<a class="headerlink" href="#setters" title="Permalink to this headline">¶</a></h3>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___setters__scheduler_cfg__c"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">Setters_schedulerCfg_c</span></span></dt>
+<dd></dd></dl>
+</div>
+<div class="section" id="general">
+<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group___general__scheduler_cfg__c"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">General_schedulerCfg_c</span></span></dt>
+<dd></dd></dl>
+</div>
+</div>
+</div>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="schedulerScheduleTableCfg_unit.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">schedulerScheduleTableCfg Unit</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="Global_schedulerCfg.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Global</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2021, Pavol Kostolansky, Florian Laschober |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="../_sources/doxygen_rst/Local_schedulerCfg.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Local</a><ul>
+<li><a class="reference internal" href="#macros">Macros</a></li>
+<li><a class="reference internal" href="#variables">Variables</a></li>
+<li><a class="reference internal" href="#api-s">API’s</a><ul>
+<li><a class="reference internal" href="#getters">Getters</a></li>
+<li><a class="reference internal" href="#setters">Setters</a></li>
+<li><a class="reference internal" href="#general">General</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    </body>
+</html>

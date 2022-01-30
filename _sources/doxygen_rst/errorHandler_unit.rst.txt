@@ -1,0 +1,13 @@
+errorHandler Unit
+=================
+
+.. toctree::
+    :caption: errorHandler Unit:
+    :maxdepth: 1
+
+    Global_errorHandler
+    Local_errorHandler
+
+.. doxygengroup:: errorHandler_unit
+    :project: CosmOS
+

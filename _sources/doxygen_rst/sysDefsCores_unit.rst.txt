@@ -1,0 +1,12 @@
+sysDefsCores Unit
+=================
+
+.. toctree::
+    :caption: sysDefsCores Unit:
+    :maxdepth: 1
+
+    Global_sysDefsCores
+
+.. doxygengroup:: sysDefsCores_unit
+    :project: CosmOS
+

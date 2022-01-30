@@ -1,0 +1,36 @@
+Test
+====
+
+.. doxygengroup:: Test_osInit
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_osInit_ut_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_osInit_ut_c
+    :project: CosmOS
+
+Functions
+---------
+
+.. doxygengroup:: functions_osInit_ut_c
+    :project: CosmOS
+
+Types
+-----
+
+.. doxygengroup:: types_osInit_ut_c
+    :project: CosmOS
+
+Testcases
+---------
+
+.. doxygengroup:: testcases_osInit_ut_c
+    :project: CosmOS
+

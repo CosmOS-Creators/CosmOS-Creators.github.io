@@ -1,0 +1,12 @@
+sysDefsHeaps Unit
+=================
+
+.. toctree::
+    :caption: sysDefsHeaps Unit:
+    :maxdepth: 1
+
+    Global_sysDefsHeaps
+
+.. doxygengroup:: sysDefsHeaps_unit
+    :project: CosmOS
+

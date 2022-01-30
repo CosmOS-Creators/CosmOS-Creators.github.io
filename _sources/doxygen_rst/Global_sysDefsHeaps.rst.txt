@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsHeaps
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsHeaps_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsHeaps_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsHeaps_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsHeaps_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsHeaps_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsHeaps_h
+    :project: CosmOS
+

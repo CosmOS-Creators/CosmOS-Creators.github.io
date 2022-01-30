@@ -1,0 +1,13 @@
+schedulerCfg Unit
+=================
+
+.. toctree::
+    :caption: schedulerCfg Unit:
+    :maxdepth: 1
+
+    Global_schedulerCfg
+    Local_schedulerCfg
+
+.. doxygengroup:: schedulerCfg_unit
+    :project: CosmOS
+

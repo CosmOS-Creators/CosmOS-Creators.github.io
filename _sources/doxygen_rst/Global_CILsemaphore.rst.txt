@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_CILsemaphore
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CILsemaphore_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CILsemaphore_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CILsemaphore_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CILsemaphore_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CILsemaphore_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CILsemaphore_h
+    :project: CosmOS
+

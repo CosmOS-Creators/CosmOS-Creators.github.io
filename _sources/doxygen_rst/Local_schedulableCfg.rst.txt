@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_schedulableCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_schedulableCfg_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_schedulableCfg_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_schedulableCfg_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_schedulableCfg_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_schedulableCfg_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_schedulableCfg_c
+    :project: CosmOS
+

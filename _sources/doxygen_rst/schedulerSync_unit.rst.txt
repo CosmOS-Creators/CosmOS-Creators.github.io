@@ -1,0 +1,13 @@
+schedulerSync Unit
+==================
+
+.. toctree::
+    :caption: schedulerSync Unit:
+    :maxdepth: 1
+
+    Global_schedulerSync
+    Local_schedulerSync
+
+.. doxygengroup:: schedulerSync_unit
+    :project: CosmOS
+

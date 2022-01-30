@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_switch
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_switch_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_switch_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_switch_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_switch_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_switch_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_switch_h
+    :project: CosmOS
+

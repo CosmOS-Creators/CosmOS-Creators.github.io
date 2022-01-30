@@ -1,0 +1,13 @@
+alarmCfg Unit
+=============
+
+.. toctree::
+    :caption: alarmCfg Unit:
+    :maxdepth: 1
+
+    Global_alarmCfg
+    Local_alarmCfg
+
+.. doxygengroup:: alarmCfg_unit
+    :project: CosmOS
+

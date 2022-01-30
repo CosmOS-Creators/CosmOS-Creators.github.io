@@ -1,0 +1,13 @@
+threadCfg Unit
+==============
+
+.. toctree::
+    :caption: threadCfg Unit:
+    :maxdepth: 1
+
+    Global_threadCfg
+    Local_threadCfg
+
+.. doxygengroup:: threadCfg_unit
+    :project: CosmOS
+

@@ -1,0 +1,13 @@
+cosmosAssert Unit
+=================
+
+.. toctree::
+    :caption: cosmosAssert Unit:
+    :maxdepth: 1
+
+    Global_cosmosAssert
+    Local_cosmosAssert
+
+.. doxygengroup:: cosmosAssert_unit
+    :project: CosmOS
+

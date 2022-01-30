@@ -1,0 +1,13 @@
+routeCfg Unit
+=============
+
+.. toctree::
+    :caption: routeCfg Unit:
+    :maxdepth: 1
+
+    Global_routeCfg
+    Local_routeCfg
+
+.. doxygengroup:: routeCfg_unit
+    :project: CosmOS
+

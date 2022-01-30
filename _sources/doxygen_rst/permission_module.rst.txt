@@ -1,0 +1,13 @@
+permission
+==========
+
+.. toctree::
+    :caption: permission:
+    :maxdepth: 1
+
+    permission_unit
+    permissionCfg_unit
+
+.. doxygengroup:: permission_module
+    :project: CosmOS
+

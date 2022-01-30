@@ -1,0 +1,13 @@
+osEventCfg Unit
+===============
+
+.. toctree::
+    :caption: osEventCfg Unit:
+    :maxdepth: 1
+
+    Global_osEventCfg
+    Local_osEventCfg
+
+.. doxygengroup:: osEventCfg_unit
+    :project: CosmOS
+

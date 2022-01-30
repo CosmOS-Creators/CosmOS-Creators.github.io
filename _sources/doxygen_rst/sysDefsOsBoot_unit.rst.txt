@@ -1,0 +1,12 @@
+sysDefsOsBoot Unit
+==================
+
+.. toctree::
+    :caption: sysDefsOsBoot Unit:
+    :maxdepth: 1
+
+    Global_sysDefsOsBoot
+
+.. doxygengroup:: sysDefsOsBoot_unit
+    :project: CosmOS
+

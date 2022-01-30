@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_memoryProtection
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_memoryProtection_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_memoryProtection_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_memoryProtection_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_memoryProtection_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_memoryProtection_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_memoryProtection_h
+    :project: CosmOS
+

@@ -1,0 +1,13 @@
+permissionCfg Unit
+==================
+
+.. toctree::
+    :caption: permissionCfg Unit:
+    :maxdepth: 1
+
+    Global_permissionCfg
+    Local_permissionCfg
+
+.. doxygengroup:: permissionCfg_unit
+    :project: CosmOS
+

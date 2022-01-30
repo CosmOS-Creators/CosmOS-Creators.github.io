@@ -1,0 +1,13 @@
+alarm Unit
+==========
+
+.. toctree::
+    :caption: alarm Unit:
+    :maxdepth: 1
+
+    Global_alarm
+    Local_alarm
+
+.. doxygengroup:: alarm_unit
+    :project: CosmOS
+

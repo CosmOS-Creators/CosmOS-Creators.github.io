@@ -1,0 +1,13 @@
+buffer Unit
+===========
+
+.. toctree::
+    :caption: buffer Unit:
+    :maxdepth: 1
+
+    Global_buffer
+    Local_buffer
+
+.. doxygengroup:: buffer_unit
+    :project: CosmOS
+

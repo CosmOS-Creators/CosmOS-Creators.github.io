@@ -1,0 +1,13 @@
+osEvent Unit
+============
+
+.. toctree::
+    :caption: osEvent Unit:
+    :maxdepth: 1
+
+    Global_osEvent
+    Local_osEvent
+
+.. doxygengroup:: osEvent_unit
+    :project: CosmOS
+

@@ -1,0 +1,13 @@
+osCfg Unit
+==========
+
+.. toctree::
+    :caption: osCfg Unit:
+    :maxdepth: 1
+
+    Global_osCfg
+    Local_osCfg
+
+.. doxygengroup:: osCfg_unit
+    :project: CosmOS
+

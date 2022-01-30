@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_CILsysCalls
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CILsysCalls_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CILsysCalls_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CILsysCalls_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CILsysCalls_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CILsysCalls_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CILsysCalls_c
+    :project: CosmOS
+

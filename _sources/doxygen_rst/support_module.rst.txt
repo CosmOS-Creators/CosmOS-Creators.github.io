@@ -1,0 +1,15 @@
+support
+=======
+
+.. toctree::
+    :caption: support:
+    :maxdepth: 1
+
+    new_unit
+    support_unit
+    supportStdio_unit
+    supportStdlib_unit
+
+.. doxygengroup:: support_module
+    :project: CosmOS
+

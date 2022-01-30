@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_threadCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_threadCfg_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_threadCfg_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_threadCfg_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_threadCfg_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_threadCfg_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_threadCfg_c
+    :project: CosmOS
+

@@ -1,0 +1,12 @@
+cosmosApi
+=========
+
+.. toctree::
+    :caption: cosmosApi:
+    :maxdepth: 1
+
+    cosmosApi_unit
+
+.. doxygengroup:: cosmosApi_module
+    :project: CosmOS
+

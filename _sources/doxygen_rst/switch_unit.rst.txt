@@ -1,0 +1,12 @@
+switch Unit
+===========
+
+.. toctree::
+    :caption: switch Unit:
+    :maxdepth: 1
+
+    Global_switch
+
+.. doxygengroup:: switch_unit
+    :project: CosmOS
+

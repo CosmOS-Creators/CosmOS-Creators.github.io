@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_coreSync
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_coreSync_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_coreSync_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_coreSync_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_coreSync_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_coreSync_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_coreSync_c
+    :project: CosmOS
+

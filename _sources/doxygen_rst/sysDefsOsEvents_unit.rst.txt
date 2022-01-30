@@ -1,0 +1,12 @@
+sysDefsOsEvents Unit
+====================
+
+.. toctree::
+    :caption: sysDefsOsEvents Unit:
+    :maxdepth: 1
+
+    Global_sysDefsOsEvents
+
+.. doxygengroup:: sysDefsOsEvents_unit
+    :project: CosmOS
+

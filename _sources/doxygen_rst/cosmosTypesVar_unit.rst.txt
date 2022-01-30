@@ -1,0 +1,12 @@
+cosmosTypesVar Unit
+===================
+
+.. toctree::
+    :caption: cosmosTypesVar Unit:
+    :maxdepth: 1
+
+    Global_cosmosTypesVar
+
+.. doxygengroup:: cosmosTypesVar_unit
+    :project: CosmOS
+

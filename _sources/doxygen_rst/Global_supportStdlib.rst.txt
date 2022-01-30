@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_supportStdlib
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_supportStdlib_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_supportStdlib_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_supportStdlib_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_supportStdlib_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_supportStdlib_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_supportStdlib_h
+    :project: CosmOS
+

@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_mutex
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_mutex_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_mutex_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_mutex_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_mutex_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_mutex_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_mutex_h
+    :project: CosmOS
+

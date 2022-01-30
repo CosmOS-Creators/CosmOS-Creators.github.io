@@ -1,0 +1,13 @@
+interruptCfg Unit
+=================
+
+.. toctree::
+    :caption: interruptCfg Unit:
+    :maxdepth: 1
+
+    Global_interruptCfg
+    Local_interruptCfg
+
+.. doxygengroup:: interruptCfg_unit
+    :project: CosmOS
+

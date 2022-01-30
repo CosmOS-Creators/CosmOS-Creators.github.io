@@ -1,0 +1,12 @@
+coreSyncCfg Unit
+================
+
+.. toctree::
+    :caption: coreSyncCfg Unit:
+    :maxdepth: 1
+
+    Global_coreSyncCfg
+
+.. doxygengroup:: coreSyncCfg_unit
+    :project: CosmOS
+

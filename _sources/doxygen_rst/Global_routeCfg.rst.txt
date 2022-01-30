@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_routeCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_routeCfg_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_routeCfg_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_routeCfg_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_routeCfg_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_routeCfg_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_routeCfg_h
+    :project: CosmOS
+

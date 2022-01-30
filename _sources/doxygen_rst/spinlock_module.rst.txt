@@ -1,0 +1,13 @@
+spinlock
+========
+
+.. toctree::
+    :caption: spinlock:
+    :maxdepth: 1
+
+    spinlock_unit
+    spinlockCfg_unit
+
+.. doxygengroup:: spinlock_module
+    :project: CosmOS
+

@@ -1,0 +1,15 @@
+buffer
+======
+
+.. toctree::
+    :caption: buffer:
+    :maxdepth: 1
+
+    buffer_unit
+    bufferDouble_unit
+    bufferCfg_unit
+    bufferDoubleCfg_unit
+
+.. doxygengroup:: buffer_module
+    :project: CosmOS
+

@@ -1,0 +1,14 @@
+stack
+=====
+
+.. toctree::
+    :caption: stack:
+    :maxdepth: 1
+
+    stack_unit
+    stackInit_unit
+    stackCfg_unit
+
+.. doxygengroup:: stack_module
+    :project: CosmOS
+

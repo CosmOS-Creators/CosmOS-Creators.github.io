@@ -1,0 +1,13 @@
+supportStdio Unit
+=================
+
+.. toctree::
+    :caption: supportStdio Unit:
+    :maxdepth: 1
+
+    Global_supportStdio
+    Local_supportStdio
+
+.. doxygengroup:: supportStdio_unit
+    :project: CosmOS
+

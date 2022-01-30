@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_sysJobs
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysJobs
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysJobs
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysJobs_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysJobs_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysJobs_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysJobs_c
+    :project: CosmOS
+

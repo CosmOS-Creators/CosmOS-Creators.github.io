@@ -1,0 +1,12 @@
+sysDefsScheduleTables Unit
+==========================
+
+.. toctree::
+    :caption: sysDefsScheduleTables Unit:
+    :maxdepth: 1
+
+    Global_sysDefsScheduleTables
+
+.. doxygengroup:: sysDefsScheduleTables_unit
+    :project: CosmOS
+

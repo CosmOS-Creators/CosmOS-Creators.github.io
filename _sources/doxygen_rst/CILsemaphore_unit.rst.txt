@@ -1,0 +1,13 @@
+CILsemaphore Unit
+=================
+
+.. toctree::
+    :caption: CILsemaphore Unit:
+    :maxdepth: 1
+
+    Global_CILsemaphore
+    Local_CILsemaphore
+
+.. doxygengroup:: CILsemaphore_unit
+    :project: CosmOS
+

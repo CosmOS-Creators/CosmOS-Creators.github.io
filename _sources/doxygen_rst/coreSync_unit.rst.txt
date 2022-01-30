@@ -1,0 +1,13 @@
+coreSync Unit
+=============
+
+.. toctree::
+    :caption: coreSync Unit:
+    :maxdepth: 1
+
+    Global_coreSync
+    Local_coreSync
+
+.. doxygengroup:: coreSync_unit
+    :project: CosmOS
+

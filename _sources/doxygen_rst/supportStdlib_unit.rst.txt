@@ -1,0 +1,13 @@
+supportStdlib Unit
+==================
+
+.. toctree::
+    :caption: supportStdlib Unit:
+    :maxdepth: 1
+
+    Global_supportStdlib
+    Local_supportStdlib
+
+.. doxygengroup:: supportStdlib_unit
+    :project: CosmOS
+

@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_route
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_route
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_route
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_route_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_route_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_route_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_route_c
+    :project: CosmOS
+

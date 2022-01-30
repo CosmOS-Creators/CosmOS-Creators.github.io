@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsSchedulables
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsSchedulables_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsSchedulables_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsSchedulables_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsSchedulables_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsSchedulables_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsSchedulables_h
+    :project: CosmOS
+

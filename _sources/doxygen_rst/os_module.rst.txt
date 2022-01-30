@@ -1,0 +1,18 @@
+os
+==
+
+.. toctree::
+    :caption: os:
+    :maxdepth: 1
+
+    os_unit
+    osBoot_unit
+    osEvent_unit
+    osInit_unit
+    osBootCfg_unit
+    osCfg_unit
+    osEventCfg_unit
+
+.. doxygengroup:: os_module
+    :project: CosmOS
+

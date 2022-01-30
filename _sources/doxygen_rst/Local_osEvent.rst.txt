@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_osEvent
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_osEvent_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_osEvent_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_osEvent_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_osEvent_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_osEvent_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_osEvent_c
+    :project: CosmOS
+

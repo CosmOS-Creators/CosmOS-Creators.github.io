@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_switchScheduler
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_switchScheduler_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_switchScheduler_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_switchScheduler_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_switchScheduler_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_switchScheduler_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_switchScheduler_h
+    :project: CosmOS
+

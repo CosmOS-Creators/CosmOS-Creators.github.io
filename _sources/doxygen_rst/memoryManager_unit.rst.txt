@@ -1,0 +1,13 @@
+memoryManager Unit
+==================
+
+.. toctree::
+    :caption: memoryManager Unit:
+    :maxdepth: 1
+
+    Global_memoryManager
+    Local_memoryManager
+
+.. doxygengroup:: memoryManager_unit
+    :project: CosmOS
+

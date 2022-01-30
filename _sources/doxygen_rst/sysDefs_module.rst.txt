@@ -1,0 +1,34 @@
+sysDefs
+=======
+
+.. toctree::
+    :caption: sysDefs:
+    :maxdepth: 1
+
+    sysDefs_unit
+    sysDefsThreads_unit
+    sysDefsBarriers_unit
+    sysDefsBuffers_unit
+    sysDefsBuffersDouble_unit
+    sysDefsChannels_unit
+    sysDefsCores_unit
+    sysDefsHeaps_unit
+    sysDefsInterrupt_unit
+    sysDefsOsBoot_unit
+    sysDefsOsEvents_unit
+    sysDefsPermissions_unit
+    sysDefsPrograms_unit
+    sysDefsRoutes_unit
+    sysDefsSchedulables_unit
+    sysDefsSchedulers_unit
+    sysDefsSchedulerThreadLists_unit
+    sysDefsScheduleTables_unit
+    sysDefsSemaphores_unit
+    sysDefsSpinlocks_unit
+    sysDefsStacks_unit
+    sysDefsSysJobs_unit
+    sysDefsTasks_unit
+
+.. doxygengroup:: sysDefs_module
+    :project: CosmOS
+

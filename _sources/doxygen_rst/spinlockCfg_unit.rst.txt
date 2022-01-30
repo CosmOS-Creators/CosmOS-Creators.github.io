@@ -1,0 +1,13 @@
+spinlockCfg Unit
+================
+
+.. toctree::
+    :caption: spinlockCfg Unit:
+    :maxdepth: 1
+
+    Global_spinlockCfg
+    Local_spinlockCfg
+
+.. doxygengroup:: spinlockCfg_unit
+    :project: CosmOS
+

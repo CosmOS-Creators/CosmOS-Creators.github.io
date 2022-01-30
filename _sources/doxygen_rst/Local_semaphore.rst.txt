@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_semaphore
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_semaphore
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_semaphore
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_semaphore_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_semaphore_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_semaphore_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_semaphore_c
+    :project: CosmOS
+

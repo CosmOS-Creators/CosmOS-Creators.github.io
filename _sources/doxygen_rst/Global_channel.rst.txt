@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_channel
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_channel_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_channel_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_channel_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_channel_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_channel_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_channel_h
+    :project: CosmOS
+

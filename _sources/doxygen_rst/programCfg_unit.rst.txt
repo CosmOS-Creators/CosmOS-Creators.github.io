@@ -1,0 +1,13 @@
+programCfg Unit
+===============
+
+.. toctree::
+    :caption: programCfg Unit:
+    :maxdepth: 1
+
+    Global_programCfg
+    Local_programCfg
+
+.. doxygengroup:: programCfg_unit
+    :project: CosmOS
+

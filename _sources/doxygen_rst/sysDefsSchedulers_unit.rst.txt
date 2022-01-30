@@ -1,0 +1,12 @@
+sysDefsSchedulers Unit
+======================
+
+.. toctree::
+    :caption: sysDefsSchedulers Unit:
+    :maxdepth: 1
+
+    Global_sysDefsSchedulers
+
+.. doxygengroup:: sysDefsSchedulers_unit
+    :project: CosmOS
+

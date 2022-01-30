@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsSysJobs
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsSysJobs_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsSysJobs_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsSysJobs_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsSysJobs_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsSysJobs_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsSysJobs_h
+    :project: CosmOS
+

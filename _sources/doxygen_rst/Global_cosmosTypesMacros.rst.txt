@@ -1,0 +1,18 @@
+Global
+======
+
+.. doxygengroup:: Global_cosmosTypesMacros
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_cosmosTypesMacros_h
+    :project: CosmOS
+
+Typedefs
+--------
+
+.. doxygengroup:: Typedefs_cosmosTypesMacrosCfg_h
+    :project: CosmOS
+

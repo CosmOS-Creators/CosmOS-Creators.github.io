@@ -1,0 +1,14 @@
+Core Unit
+=========
+
+.. toctree::
+    :caption: Core Unit:
+    :maxdepth: 1
+
+    Global_core
+    Local_core
+    Test_core
+
+.. doxygengroup:: core_unit
+    :project: CosmOS
+

@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsThreads
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsThreads_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsThreads_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsThreads_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsThreads_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsThreads_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsThreads_h
+    :project: CosmOS
+

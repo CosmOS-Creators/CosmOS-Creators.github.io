@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_bufferDouble
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_bufferDouble
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_bufferDouble
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_bufferDouble_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_bufferDouble_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_bufferDouble_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_bufferDouble_c
+    :project: CosmOS
+

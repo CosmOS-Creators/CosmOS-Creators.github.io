@@ -1,0 +1,13 @@
+osBoot Unit
+===========
+
+.. toctree::
+    :caption: osBoot Unit:
+    :maxdepth: 1
+
+    Global_osBoot
+    Local_osBoot
+
+.. doxygengroup:: osBoot_unit
+    :project: CosmOS
+

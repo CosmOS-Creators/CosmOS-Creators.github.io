@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsBarriers
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsBarriers_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsBarriers_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsBarriers_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsBarriers_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsBarriers_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsBarriers_h
+    :project: CosmOS
+

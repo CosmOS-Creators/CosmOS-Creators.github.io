@@ -1,0 +1,13 @@
+mutexCfg Unit
+=============
+
+.. toctree::
+    :caption: mutexCfg Unit:
+    :maxdepth: 1
+
+    Global_mutexCfg
+    Local_mutexCfg
+
+.. doxygengroup:: mutexCfg_unit
+    :project: CosmOS
+

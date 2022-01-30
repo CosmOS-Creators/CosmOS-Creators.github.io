@@ -1,0 +1,12 @@
+sysDefsTasks Unit
+=================
+
+.. toctree::
+    :caption: sysDefsTasks Unit:
+    :maxdepth: 1
+
+    Global_sysDefsTasks
+
+.. doxygengroup:: sysDefsTasks_unit
+    :project: CosmOS
+

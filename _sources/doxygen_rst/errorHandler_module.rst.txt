@@ -1,0 +1,12 @@
+errorHandler
+============
+
+.. toctree::
+    :caption: errorHandler:
+    :maxdepth: 1
+
+    errorHandler_unit
+
+.. doxygengroup:: errorHandler_module
+    :project: CosmOS
+

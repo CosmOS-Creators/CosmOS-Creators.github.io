@@ -1,0 +1,13 @@
+bufferDouble Unit
+=================
+
+.. toctree::
+    :caption: bufferDouble Unit:
+    :maxdepth: 1
+
+    Global_bufferDouble
+    Local_bufferDouble
+
+.. doxygengroup:: bufferDouble_unit
+    :project: CosmOS
+

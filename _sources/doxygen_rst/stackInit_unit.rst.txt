@@ -1,0 +1,13 @@
+stackInit Unit
+==============
+
+.. toctree::
+    :caption: stackInit Unit:
+    :maxdepth: 1
+
+    Global_stackInit
+    Local_stackInit
+
+.. doxygengroup:: stackInit_unit
+    :project: CosmOS
+

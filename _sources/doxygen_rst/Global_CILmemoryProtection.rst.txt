@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_CILmemoryProtection
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CILmemoryProtection_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CILmemoryProtection_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CILmemoryProtection_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CILmemoryProtection_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CILmemoryProtection_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CILmemoryProtection_h
+    :project: CosmOS
+

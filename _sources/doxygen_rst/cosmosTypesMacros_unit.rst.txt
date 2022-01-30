@@ -1,0 +1,12 @@
+cosmosTypesMacros Unit
+======================
+
+.. toctree::
+    :caption: cosmosTypesMacros Unit:
+    :maxdepth: 1
+
+    Global_cosmosTypesMacros
+
+.. doxygengroup:: cosmosTypesMacros_unit
+    :project: CosmOS
+

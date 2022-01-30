@@ -1,0 +1,13 @@
+schedulerThreadListCfg Unit
+===========================
+
+.. toctree::
+    :caption: schedulerThreadListCfg Unit:
+    :maxdepth: 1
+
+    Global_schedulerThreadListCfg
+    Local_schedulerThreadListCfg
+
+.. doxygengroup:: schedulerThreadListCfg_unit
+    :project: CosmOS
+

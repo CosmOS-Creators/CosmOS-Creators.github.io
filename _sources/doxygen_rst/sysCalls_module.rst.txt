@@ -1,0 +1,12 @@
+sysCalls
+========
+
+.. toctree::
+    :caption: sysCalls:
+    :maxdepth: 1
+
+    sysCalls_unit
+
+.. doxygengroup:: sysCalls_module
+    :project: CosmOS
+

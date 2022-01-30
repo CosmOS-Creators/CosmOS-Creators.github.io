@@ -1,0 +1,13 @@
+channelCfg Unit
+===============
+
+.. toctree::
+    :caption: channelCfg Unit:
+    :maxdepth: 1
+
+    Global_channelCfg
+    Local_channelCfg
+
+.. doxygengroup:: channelCfg_unit
+    :project: CosmOS
+

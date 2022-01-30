@@ -1,0 +1,13 @@
+sysCalls Unit
+=============
+
+.. toctree::
+    :caption: sysCalls Unit:
+    :maxdepth: 1
+
+    Global_sysCalls
+    Local_sysCalls
+
+.. doxygengroup:: sysCalls_unit
+    :project: CosmOS
+

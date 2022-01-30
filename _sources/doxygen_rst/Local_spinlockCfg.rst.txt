@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_spinlockCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_spinlockCfg
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_spinlockCfg
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_spinlockCfg_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_spinlockCfg_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_spinlockCfg_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_spinlockCfg_c
+    :project: CosmOS
+

@@ -1,0 +1,12 @@
+sysDefsBarriers Unit
+====================
+
+.. toctree::
+    :caption: sysDefsBarriers Unit:
+    :maxdepth: 1
+
+    Global_sysDefsBarriers
+
+.. doxygengroup:: sysDefsBarriers_unit
+    :project: CosmOS
+

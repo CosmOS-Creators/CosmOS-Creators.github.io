@@ -1,0 +1,15 @@
+core
+====
+
+.. toctree::
+    :caption: core:
+    :maxdepth: 1
+
+    core_unit
+    coreSync_unit
+    coreCfg_unit
+    coreSyncCfg_unit
+
+.. doxygengroup:: core_module
+    :project: CosmOS
+

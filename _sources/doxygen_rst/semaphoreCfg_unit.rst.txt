@@ -1,0 +1,13 @@
+semaphoreCfg Unit
+=================
+
+.. toctree::
+    :caption: semaphoreCfg Unit:
+    :maxdepth: 1
+
+    Global_semaphoreCfg
+    Local_semaphoreCfg
+
+.. doxygengroup:: semaphoreCfg_unit
+    :project: CosmOS
+

@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsSchedulerThreadLists
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsSchedulerThreadLists_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsSchedulerThreadLists_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsSchedulerThreadLists_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsSchedulerThreadLists_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsSchedulerThreadLists_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsSchedulerThreadLists_h
+    :project: CosmOS
+

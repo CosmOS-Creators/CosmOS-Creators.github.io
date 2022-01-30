@@ -1,0 +1,13 @@
+heap
+====
+
+.. toctree::
+    :caption: heap:
+    :maxdepth: 1
+
+    heap_unit
+    heapCfg_unit
+
+.. doxygengroup:: heap_module
+    :project: CosmOS
+

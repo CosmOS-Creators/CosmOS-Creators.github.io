@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_cosmosAssert
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_cosmosAssert
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_cosmosAssert
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_cosmosAssert_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_cosmosAssert_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_cosmosAssert_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_cosmosAssert_c
+    :project: CosmOS
+

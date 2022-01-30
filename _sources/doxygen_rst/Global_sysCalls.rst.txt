@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysCalls
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysCalls_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysCalls_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysCalls_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysCalls_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysCalls_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysCalls_h
+    :project: CosmOS
+

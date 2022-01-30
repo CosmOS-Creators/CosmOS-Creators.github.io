@@ -1,0 +1,14 @@
+osInit Unit
+===========
+
+.. toctree::
+    :caption: osInit Unit:
+    :maxdepth: 1
+
+    Global_osInit
+    Local_osInit
+    Test_osInit
+
+.. doxygengroup:: osInit_unit
+    :project: CosmOS
+

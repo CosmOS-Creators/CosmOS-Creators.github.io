@@ -1,0 +1,13 @@
+channel
+=======
+
+.. toctree::
+    :caption: channel:
+    :maxdepth: 1
+
+    channel_unit
+    channelCfg_unit
+
+.. doxygengroup:: channel_module
+    :project: CosmOS
+

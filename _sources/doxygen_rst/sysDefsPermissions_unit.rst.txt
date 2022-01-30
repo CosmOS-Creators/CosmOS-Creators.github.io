@@ -1,0 +1,12 @@
+sysDefsPermissions Unit
+=======================
+
+.. toctree::
+    :caption: sysDefsPermissions Unit:
+    :maxdepth: 1
+
+    Global_sysDefsPermissions
+
+.. doxygengroup:: sysDefsPermissions_unit
+    :project: CosmOS
+

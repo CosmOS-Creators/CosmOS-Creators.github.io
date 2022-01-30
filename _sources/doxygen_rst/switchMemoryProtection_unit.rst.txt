@@ -1,0 +1,12 @@
+switchMemoryProtection Unit
+===========================
+
+.. toctree::
+    :caption: switchMemoryProtection Unit:
+    :maxdepth: 1
+
+    Global_switchMemoryProtection
+
+.. doxygengroup:: switchMemoryProtection_unit
+    :project: CosmOS
+

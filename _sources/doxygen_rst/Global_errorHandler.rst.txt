@@ -1,0 +1,36 @@
+Global
+======
+
+.. doxygengroup:: Global_errorHandler
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_errorHandler_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_errorHandler_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_errorHandler_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_errorHandler_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_errorHandler_h
+    :project: CosmOS
+

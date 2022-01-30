@@ -1,0 +1,13 @@
+sysJobsCfg Unit
+===============
+
+.. toctree::
+    :caption: sysJobsCfg Unit:
+    :maxdepth: 1
+
+    Global_sysJobsCfg
+    Local_sysJobsCfg
+
+.. doxygengroup:: sysJobsCfg_unit
+    :project: CosmOS
+

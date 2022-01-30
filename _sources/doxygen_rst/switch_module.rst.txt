@@ -1,0 +1,15 @@
+switch
+======
+
+.. toctree::
+    :caption: switch:
+    :maxdepth: 1
+
+    switch_unit
+    switchMemoryProtection_unit
+    switchScheduler_unit
+    switchSchedulerSync_unit
+
+.. doxygengroup:: switch_module
+    :project: CosmOS
+

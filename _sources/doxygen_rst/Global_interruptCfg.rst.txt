@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_interruptCfg
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_interruptCfg_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_interruptCfg_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_interruptCfg_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_interruptCfg_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_interruptCfg_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_interruptCfg_h
+    :project: CosmOS
+

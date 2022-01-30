@@ -1,0 +1,16 @@
+cosmosTypes
+===========
+
+.. toctree::
+    :caption: cosmosTypes:
+    :maxdepth: 1
+
+    cosmosTypes_unit
+    cosmosTypesCfg_unit
+    cosmosTypesMacros_unit
+    cosmosTypesStd_unit
+    cosmosTypesVar_unit
+
+.. doxygengroup:: cosmosTypes_module
+    :project: CosmOS
+

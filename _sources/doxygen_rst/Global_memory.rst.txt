@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_memory
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_memory_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_memory_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_memory_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_memory_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_memory_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_memory_h
+    :project: CosmOS
+

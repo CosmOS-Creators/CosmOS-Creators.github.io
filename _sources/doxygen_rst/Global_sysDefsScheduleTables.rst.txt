@@ -1,0 +1,42 @@
+Global
+======
+
+.. doxygengroup:: Global_sysDefsScheduleTables
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysDefsScheduleTables_h
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysDefsScheduleTables_h
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysDefsScheduleTables_h
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysDefsScheduleTables_h
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysDefsScheduleTables_h
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysDefsScheduleTables_h
+    :project: CosmOS
+

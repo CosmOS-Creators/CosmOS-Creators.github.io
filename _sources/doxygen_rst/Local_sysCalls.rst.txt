@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_sysCalls
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_sysCalls
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_sysCalls
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_sysCalls_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_sysCalls_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_sysCalls_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_sysCalls_c
+    :project: CosmOS
+

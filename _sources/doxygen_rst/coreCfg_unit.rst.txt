@@ -1,0 +1,13 @@
+coreCfg Unit
+============
+
+.. toctree::
+    :caption: coreCfg Unit:
+    :maxdepth: 1
+
+    Global_coreCfg
+    Local_coreCfg
+
+.. doxygengroup:: coreCfg_unit
+    :project: CosmOS
+

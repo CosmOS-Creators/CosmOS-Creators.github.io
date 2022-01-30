@@ -1,0 +1,12 @@
+sysDefsSpinlocks Unit
+=====================
+
+.. toctree::
+    :caption: sysDefsSpinlocks Unit:
+    :maxdepth: 1
+
+    Global_sysDefsSpinlocks
+
+.. doxygengroup:: sysDefsSpinlocks_unit
+    :project: CosmOS
+

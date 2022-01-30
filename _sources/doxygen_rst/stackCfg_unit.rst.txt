@@ -1,0 +1,13 @@
+stackCfg Unit
+=============
+
+.. toctree::
+    :caption: stackCfg Unit:
+    :maxdepth: 1
+
+    Global_stackCfg
+    Local_stackCfg
+
+.. doxygengroup:: stackCfg_unit
+    :project: CosmOS
+

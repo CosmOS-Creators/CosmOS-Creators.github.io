@@ -1,0 +1,36 @@
+Local
+=====
+
+.. doxygengroup:: Local_CILmutex
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CILmutex
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CILmutex_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CILmutex_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CILmutex_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CILmutex_c
+    :project: CosmOS
+

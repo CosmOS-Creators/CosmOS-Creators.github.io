@@ -1,0 +1,18 @@
+Global
+======
+
+.. doxygengroup:: Global_CILbaseTypes
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CILbaseTypes_h
+    :project: CosmOS
+
+Typedefs
+--------
+
+.. doxygengroup:: Typedefs_CILbaseTypesCfg_h
+    :project: CosmOS
+

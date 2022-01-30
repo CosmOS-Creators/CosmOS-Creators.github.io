@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_CILcore
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_CILcore_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_CILcore_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_CILcore_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_CILcore_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_CILcore_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_CILcore_c
+    :project: CosmOS
+

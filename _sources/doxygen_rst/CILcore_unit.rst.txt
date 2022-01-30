@@ -1,0 +1,13 @@
+CILcore Unit
+============
+
+.. toctree::
+    :caption: CILcore Unit:
+    :maxdepth: 1
+
+    Global_CILcore
+    Local_CILcore
+
+.. doxygengroup:: CILcore_unit
+    :project: CosmOS
+

@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_stackInit
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_stackInit_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_stackInit_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_stackInit_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_stackInit_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_stackInit_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_stackInit_c
+    :project: CosmOS
+

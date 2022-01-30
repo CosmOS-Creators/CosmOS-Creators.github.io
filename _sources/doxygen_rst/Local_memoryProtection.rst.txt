@@ -1,0 +1,42 @@
+Local
+=====
+
+.. doxygengroup:: Local_memoryProtection
+    :project: CosmOS
+
+Macros
+------
+
+.. doxygengroup:: Macros_memoryProtection_c
+    :project: CosmOS
+
+Variables
+---------
+
+.. doxygengroup:: Variables_memoryProtection_c
+    :project: CosmOS
+
+API's
+-----
+
+.. doxygengroup:: Apis_memoryProtection_c
+    :project: CosmOS
+
+Getters
+```````
+
+.. doxygengroup:: Getters_memoryProtection_c
+    :project: CosmOS
+
+Setters
+```````
+
+.. doxygengroup:: Setters_memoryProtection_c
+    :project: CosmOS
+
+General
+```````
+
+.. doxygengroup:: General_memoryProtection_c
+    :project: CosmOS
+

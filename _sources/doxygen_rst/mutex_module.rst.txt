@@ -1,0 +1,13 @@
+mutex
+=====
+
+.. toctree::
+    :caption: mutex:
+    :maxdepth: 1
+
+    mutex_unit
+    mutexCfg_unit
+
+.. doxygengroup:: mutex_module
+    :project: CosmOS
+

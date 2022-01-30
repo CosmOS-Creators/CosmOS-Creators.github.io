@@ -1,0 +1,13 @@
+bufferCfg Unit
+==============
+
+.. toctree::
+    :caption: bufferCfg Unit:
+    :maxdepth: 1
+
+    Global_bufferCfg
+    Local_bufferCfg
+
+.. doxygengroup:: bufferCfg_unit
+    :project: CosmOS
+

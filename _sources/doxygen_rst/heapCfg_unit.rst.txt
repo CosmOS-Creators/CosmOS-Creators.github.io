@@ -1,0 +1,13 @@
+heapCfg Unit
+============
+
+.. toctree::
+    :caption: heapCfg Unit:
+    :maxdepth: 1
+
+    Global_heapCfg
+    Local_heapCfg
+
+.. doxygengroup:: heapCfg_unit
+    :project: CosmOS
+

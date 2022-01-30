@@ -1,0 +1,12 @@
+sysDefsSemaphores Unit
+======================
+
+.. toctree::
+    :caption: sysDefsSemaphores Unit:
+    :maxdepth: 1
+
+    Global_sysDefsSemaphores
+
+.. doxygengroup:: sysDefsSemaphores_unit
+    :project: CosmOS
+
