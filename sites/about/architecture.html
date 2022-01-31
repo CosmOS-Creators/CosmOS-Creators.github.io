@@ -950,9 +950,9 @@
 <h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>CosmOS architecture is microkernel-based and implements a near-minimum amount of the operating system’s software.</p></li>
-<li><p>The main parts of the CosmOS microkernel is scheduling, memory handling and data exchange interface. Data exchange interface is the operating system basic inter-program communication model. The microkernel can be easily expanded either with system jobs if it is necessary and make the microkernel modular, even though is highly suggested to implement all services in the user space and use data exchange interface for the inter-program communication as it is shown in the figure below.</p></li>
-<li><p>The programs are running in the user space and each of them is encapsulates its threads and tasks, providing them a safe memory space for the data, and heap for the dynamic allocation. This design allows users to implement programs with multiple safety levels without any interference between them.</p></li>
-<li><p>To ensure memory safety the operating system configuration is completely static that includes also configured programs, tasks and threads and remain constant during the run-time.</p></li>
+<li><p>The main parts of the CosmOS microkernel is scheduling, memory handling, and data exchange interface. The data exchange interface is the operating system’s basic inter-program communication model. The microkernel can be easily expanded either with system jobs if it is necessary and make the microkernel modular, even though is highly suggested to implement all services in the user space and use data exchange interface for the inter-program communication as it is shown in the figure below.</p></li>
+<li><p>The programs are running in the user space and each of them encapsulates its threads and tasks, providing them a safe memory space for the data, and heap for the dynamic allocation. This design allows users to implement programs with multiple safety levels without any interference between them.</p></li>
+<li><p>To ensure memory safety, the operating system configuration is completely static that includes also configured programs, tasks, and threads and remains constant during the run-time.</p></li>
 </ul>
 <img alt="../../_images/system_architecture.png" src="../../_images/system_architecture.png"/>
 </div>
