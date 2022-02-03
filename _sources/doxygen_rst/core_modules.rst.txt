@@ -5,32 +5,32 @@ Core Modules
     :caption: Core Modules:
     :maxdepth: 1
 
-    cosmosApiInternal_module
-    alarm_module
-    thread_module
-    channel_module
-    stack_module
     cosmosTypes_module
-    cosmosApi_module
-    schedulable_module
-    sysCalls_module
-    route_module
-    heap_module
-    buffer_module
-    core_module
+    scheduler_module
     memory_module
+    interrupt_module
+    program_module
+    alarm_module
+    cosmosApiInternal_module
+    cosmosAssert_module
+    sysDefs_module
+    support_module
     spinlock_module
-    permission_module
+    schedulable_module
+    core_module
+    thread_module
     os_module
     sysJobs_module
-    scheduler_module
+    sysCalls_module
     mutex_module
-    support_module
-    switch_module
+    cosmosApi_module
+    heap_module
+    stack_module
     task_module
-    program_module
-    semaphore_module
-    interrupt_module
-    sysDefs_module
-    cosmosAssert_module
+    permission_module
+    switch_module
+    buffer_module
     errorHandler_module
+    route_module
+    semaphore_module
+    channel_module

@@ -2,10 +2,10 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Search" href="../../../../search.html" /><link rel="next" title="Logic Runners" href="../logicRunners.html" /><link rel="prev" title="Linking configs, elements and attributes" href="links.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Search" href="../../../../search.html" /><link rel="next" title="Generic json file structure" href="genericJson.html" /><link rel="prev" title="Configuration" href="../configuration.html" />
 
     <link rel="shortcut icon" href="../../../../_static/favicon.ico"/><meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
-        <title>Parser constants definitions - CosmOS documentation</title>
+        <title>Environment and file generation config files - CosmOS documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
@@ -186,58 +186,58 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../whatIs/gtest.html">Google test</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../howTo.html">How to</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../howTo/setupReferenceProject.html">Setup reference project</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../../howTo/setupReferenceProject/vsCode.html">Visual Studio Code</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/vsCode/setup.html">Development environment setup</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/vsCode/compiling.html">Compiling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/vsCode/debugging.html">Debugging</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/vsCode/logger.html">Logger</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../howTo.html">How to</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../setupReferenceProject.html">Setup reference project</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../vsCode.html">Visual Studio Code</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../vsCode/setup.html">Development environment setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vsCode/compiling.html">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vsCode/debugging.html">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vsCode/logger.html">Logger</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../../howTo/setupReferenceProject/stmIde.html">STM32 Cube IDE</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/stmIde/import.html">Import</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/stmIde/compiling.html">Compiling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/stmIde/debugging.html">Debugging</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/stmIde/logger.html">Logger</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../stmIde.html">STM32 Cube IDE</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../stmIde/import.html">Import</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stmIde/compiling.html">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stmIde/debugging.html">Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stmIde/logger.html">Logger</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../../howTo/setupReferenceProject/configuration.html">Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/configuration/environment.html">Environment and file generation config files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/setupReferenceProject/configuration/genericJson.html">Generic json file structure</a></li>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../configuration.html">Configuration</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Environment and file generation config files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genericJson.html">Generic json file structure</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../howTo/setupReferenceProject/tcpEcho.html">TCP Echo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tcpEcho.html">TCP Echo</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../howTo/useIt.html">Use CosmOS in your project</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../howTo/useIt/integration.html">Integration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../howTo/useIt/application.html">Application</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../howTo/useIt/supportedHardware.html">Supported hardware</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../useIt.html">Use CosmOS in your project</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../useIt/integration.html">Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../useIt/application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../useIt/supportedHardware.html">Supported hardware</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../howTo/contribute.html">Contribute</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../../howTo/contribute/c.html">C</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/contribute/c/functional.html">Functional</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/contribute/c/tests.html">Tests</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/contribute/c/runTests.html">Run tests</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../contribute.html">Contribute</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../contribute/c.html">C</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/c/functional.html">Functional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/c/tests.html">Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/c/runTests.html">Run tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../../howTo/contribute/python.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/contribute/python/functional.html">Functional</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/contribute/python/tests.html">Tests</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../howTo/contribute/python/runTests.html">Run tests</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../contribute/python.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/python/functional.html">Functional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/python/tests.html">Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../contribute/python/runTests.html">Run tests</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../howTo/contribute/continuousIntegration.html">Continuous integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contribute/continuousIntegration.html">Continuous integration</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../howTo/reportBug.html">Report a bug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../reportBug.html">Report a bug</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../documentation.html">Documentation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../cosmos.html">CosmOS</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../cosmos/core.html">Core</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../documentation.html">Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../documentation/cosmos.html">CosmOS</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../documentation/cosmos/core.html">Core</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../../../../doxygen_rst/core_modules.html">Core Modules</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5 has-children"><a class="reference internal" href="../../../../doxygen_rst/cosmosTypes_module.html">cosmosTypes</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l6 has-children"><a class="reference internal" href="../../../../doxygen_rst/cosmosTypes_unit.html">cosmosTypes Unit</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -776,7 +776,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../cosmos/integration.html">Integration of the STM32H755ZI MCU</a><input class="toctree-checkbox" id="toctree-checkbox-143" name="toctree-checkbox-143" role="switch" type="checkbox"/><label for="toctree-checkbox-143"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../documentation/cosmos/integration.html">Integration of the STM32H755ZI MCU</a><input class="toctree-checkbox" id="toctree-checkbox-143" name="toctree-checkbox-143" role="switch" type="checkbox"/><label for="toctree-checkbox-143"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4 has-children"><a class="reference internal" href="../../../../doxygen_rst/integration_modules.html">Integration Modules</a><input class="toctree-checkbox" id="toctree-checkbox-144" name="toctree-checkbox-144" role="switch" type="checkbox"/><label for="toctree-checkbox-144"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l5 has-children"><a class="reference internal" href="../../../../doxygen_rst/CIL_module.html">CIL</a><input class="toctree-checkbox" id="toctree-checkbox-145" name="toctree-checkbox-145" role="switch" type="checkbox"/><label for="toctree-checkbox-145"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l6 has-children"><a class="reference internal" href="../../../../doxygen_rst/CIL_unit.html">CIL Unit</a><input class="toctree-checkbox" id="toctree-checkbox-146" name="toctree-checkbox-146" role="switch" type="checkbox"/><label for="toctree-checkbox-146"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -848,15 +848,15 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current has-children"><a class="reference internal" href="../../customBox.html">CustomBox</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-159" name="toctree-checkbox-159" role="switch" type="checkbox"/><label for="toctree-checkbox-159"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current has-children"><a class="reference internal" href="../parser.html">Parser</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-160" name="toctree-checkbox-160" role="switch" type="checkbox"/><label for="toctree-checkbox-160"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="config_files.html">Parser configuration files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="links.html">Linking configs, elements and attributes</a></li>
-<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Parser constants definitions</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../documentation/customBox.html">CustomBox</a><input class="toctree-checkbox" id="toctree-checkbox-159" name="toctree-checkbox-159" role="switch" type="checkbox"/><label for="toctree-checkbox-159"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../documentation/customBox/parser.html">Parser</a><input class="toctree-checkbox" id="toctree-checkbox-160" name="toctree-checkbox-160" role="switch" type="checkbox"/><label for="toctree-checkbox-160"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../documentation/customBox/parser/config_files.html">Parser configuration files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../documentation/customBox/parser/links.html">Linking configs, elements and attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../documentation/customBox/parser/constants.html">Parser constants definitions</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../logicRunners.html">Logic Runners</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../generator.html">Generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../documentation/customBox/logicRunners.html">Logic Runners</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../documentation/customBox/generator.html">Generator</a></li>
 </ul>
 </li>
 </ul>
@@ -946,124 +946,243 @@
           </label>
         </div>
         <article role="main">
-          <div class="section" id="parser-constants-definitions">
-<h1>Parser constants definitions<a class="headerlink" href="#parser-constants-definitions" title="Permalink to this headline">¶</a></h1>
-<p>Constant definitions that are used in the code to parse the json configs</p>
-<div class="section" id="supported-attribute-types">
-<span id="attribute-types"></span><h2>Supported attribute types<a class="headerlink" href="#supported-attribute-types" title="Permalink to this headline">¶</a></h2>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_STRING">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_STRING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'string'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_STRING" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a string. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.StringType" title="Parser.AttributeTypes.StringType"><code class="xref py py-data docutils literal notranslate"><span class="pre">String</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_INT">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_INT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'int'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_INT" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is an integer. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.IntType" title="Parser.AttributeTypes.IntType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Int</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_FLOAT">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_FLOAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'float'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_FLOAT" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a float. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.FloatType" title="Parser.AttributeTypes.FloatType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Float</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_BOOL">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_BOOL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'bool'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_BOOL" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a boolean. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.BoolType" title="Parser.AttributeTypes.BoolType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Bool</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_HEX">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_HEX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'hex'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_HEX" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a hexadecimal number. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.HexType" title="Parser.AttributeTypes.HexType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Hex</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_REFERENCE_LIST">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_REFERENCE_LIST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'referenceList'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_REFERENCE_LIST" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a list of references. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.ReferenceListType" title="Parser.AttributeTypes.ReferenceListType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Reference</span> <span class="pre">List</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_STRING_LIST">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_STRING_LIST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'stringList'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_STRING_LIST" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a list of strings. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.StringListType" title="Parser.AttributeTypes.StringListType"><code class="xref py py-data docutils literal notranslate"><span class="pre">String</span> <span class="pre">List</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_SELECTION">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_SELECTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'selection'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_SELECTION" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a selection. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.SelectionType" title="Parser.AttributeTypes.SelectionType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Selection</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_SLIDER">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_SLIDER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'slider'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_SLIDER" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a slider. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.SliderType" title="Parser.AttributeTypes.SliderType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Slider</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ATTRIB_TYPE_PARENT_REFERENCE">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ATTRIB_TYPE_PARENT_REFERENCE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'parentReference'</span></em><a class="headerlink" href="#Parser.constants.ATTRIB_TYPE_PARENT_REFERENCE" title="Permalink to this definition">¶</a></dt>
-<dd><p>defines an attribute that is a reference to a parent attribute. For further information see <a class="reference internal" href="config_files.html#Parser.AttributeTypes.ParentReferenceType" title="Parser.AttributeTypes.ParentReferenceType"><code class="xref py py-data docutils literal notranslate"><span class="pre">Parent</span> <span class="pre">Reference</span> <span class="pre">Attribute</span></code></a></p>
-</dd></dl>
+          <div class="section" id="environment-and-file-generation-config-files">
+<h1>Environment and file generation config files<a class="headerlink" href="#environment-and-file-generation-config-files" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="environment-config">
+<h2>Environment config<a class="headerlink" href="#environment-config" title="Permalink to this headline">¶</a></h2>
+<p>The Environment configuration file should only contain json properties
+which are either of type string or a list containing strings. Nesting of
+objects is not allowed/supported.</p>
+<div class="section" id="placeholders">
+<h3>Placeholders<a class="headerlink" href="#placeholders" title="Permalink to this headline">¶</a></h3>
+<p>A placeholder is defined by wrapping the placeholders name in curly
+braces. For example: <code class="docutils literal notranslate"><span class="pre">{environment}</span></code></p>
+<p>Any string type property can be used as a placeholder for another
+property value. List items cannot be used as placeholders. There is a
+special placeholder for referring to the environment root directory to
+allow an easy configuration of absolute paths called <code class="docutils literal notranslate"><span class="pre">environment</span></code>.
+Creating a key with this name in the json file is forbidden.</p>
+<p>Consider the following example:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"Cosmos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{environment}/Cosmos"</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"CoreConfig"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{Cosmos}/configuration/systemDefinition"</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"HWConfig"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{Cosmos}/stm32h755_integration/configuration"</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">"config"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="s2">"{CoreConfig}"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">"{HWConfig}"</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
 </div>
-<div class="section" id="supported-json-config-file-keys">
-<h2>Supported JSON config file keys<a class="headerlink" href="#supported-json-config-file-keys" title="Permalink to this headline">¶</a></h2>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.TYPE_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">TYPE_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'type'</span></em><a class="headerlink" href="#Parser.constants.TYPE_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ <a class="reference internal" href="#attribute-types"><span class="std std-ref">attribute type</span></a>, REQUIRED ] Selects the type of an attribute definition</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.TOOLTIP_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">TOOLTIP_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'tooltip'</span></em><a class="headerlink" href="#Parser.constants.TOOLTIP_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ string, default = None ] Display a tooltip with additional information about this attribute definition</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.LABEL_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">LABEL_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'label'</span></em><a class="headerlink" href="#Parser.constants.LABEL_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ string, REQUIRED ] Used to define the label that is used in the UI this attribute definition</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.PLACEHOLDER_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">PLACEHOLDER_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'placeholder'</span></em><a class="headerlink" href="#Parser.constants.PLACEHOLDER_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ bool, default = False ] Specify that an attribute definition has a value that is assigned during runtime, for example by a logic runner invoked by the generator, thus a attribute instance of this definition does not have a value property.</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.HIDDEN_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">HIDDEN_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'hidden'</span></em><a class="headerlink" href="#Parser.constants.HIDDEN_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ bool, default = False ] Hides this attribute from the user interface if set to true</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.INHERIT_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">INHERIT_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'inherit'</span></em><a class="headerlink" href="#Parser.constants.INHERIT_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ <a class="reference internal" href="links.html#Parser.LinkElement.Link" title="Parser.LinkElement.Link"><code class="xref py py-data docutils literal notranslate"><span class="pre">link</span></code></a>, default = None ] Inherit all properties of an attribute definition to another attribute definition with the possibility to overwrite them if desidered</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.VALIDATION_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">VALIDATION_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'validation'</span></em><a class="headerlink" href="#Parser.constants.VALIDATION_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ string, default = None ] Used to specify a regex validation rule for this attribute definition</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ELEMENTS_LIST_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ELEMENTS_LIST_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'elements'</span></em><a class="headerlink" href="#Parser.constants.ELEMENTS_LIST_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ list, REQUIRED in certain cases ] Used to specify a list of valid elements for this attribute definition. The list element types can differ depending on the attribute type.</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.STEP_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">STEP_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'step'</span></em><a class="headerlink" href="#Parser.constants.STEP_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ number, default = 1 ] Used to specify a the step value for this attribute definition which will define how a spinner UI element will behave when the user clicks on the up or down arrow. If the value is an integer, the spinner will behave as a integer spinner. If the value is a float, the spinner will behave as a float spinner.</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.MIN_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">MIN_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'min'</span></em><a class="headerlink" href="#Parser.constants.MIN_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ number, default = None ] Used to specify a the minimum value for this attribute definition which will define the minimum value for a spinner UI element.</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.MAX_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">MAX_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'max'</span></em><a class="headerlink" href="#Parser.constants.MAX_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ number, default = None ] Used to specify a the maximum value for this attribute definition which will define the maximum value for a spinner UI element.</p>
-</dd></dl>
-<dl class="py data">
-<dt class="sig sig-object py" id="Parser.constants.ALIGNMENT_KEY">
-<span class="sig-prename descclassname"><span class="pre">Parser.constants.</span></span><span class="sig-name descname"><span class="pre">ALIGNMENT_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'alignment'</span></em><a class="headerlink" href="#Parser.constants.ALIGNMENT_KEY" title="Permalink to this definition">¶</a></dt>
-<dd><p>[ number, default = None ] Used to specify a alignment value for this attribute definition which will define make sure any input is a multiple of this number.</p>
-</dd></dl>
+<p>Using the example above the environment parser would return an object
+containing a property for every key in the config file. Calling
+<code class="docutils literal notranslate"><span class="pre">environment.CoreConfig</span></code> in python would return something like
+<code class="docutils literal notranslate"><span class="pre">C:\Files\Projects\Cosmos_reference_project\Cosmos</span></code> assuming that
+environment is the name of the environment object that was returned by the
+environment parser. <code class="docutils literal notranslate"><span class="pre">environment.config</span></code> would return something along the
+lines of:
+<code class="docutils literal notranslate"><span class="pre">[".../Cosmos_reference_project/Cosmos/configuration/systemDefinition",</span> <span class="pre">".../Cosmos_reference_project/Cosmos/stm32h755_integration/configuration"]</span></code>.
+The environment parser also provides methods for making sure that certain
+properties exist inside the json and also for checking whether the given
+paths exist, are valid files or even prompt it to create the paths if
+they do not exist yet. This can be done using the following methods of
+the environment object:</p>
+<ul class="simple">
+<li><p>require</p></li>
+<li><p>requireFile</p></li>
+<li><p>requireFolder</p></li>
+</ul>
+<p>For full documentation on these please check the python docstrings
+inside the environment parser sourcefile.</p>
+<p>Also any additional paths can be easily resolved by calling the
+<code class="docutils literal notranslate"><span class="pre">resolvePath</span></code> method of the environment object with full support for
+replacing any already known placeholders inside the paths string.</p>
+</div>
+</div>
+<div class="section" id="file-generation-config">
+<h2>File generation config<a class="headerlink" href="#file-generation-config" title="Permalink to this headline">¶</a></h2>
+<p>This config is used to determine which files have to be generated with
+which templates and in which output directories they have to be
+generated.</p>
+<div class="section" id="description-of-config-file-structure">
+<h3>Description of config file structure<a class="headerlink" href="#description-of-config-file-structure" title="Permalink to this headline">¶</a></h3>
+<p>The configuration json file consists of multiple root level elements.
+each root level element represents one type of file generation. There
+can be as many root level elements as needed. Every root level element
+may contain the following properties:</p>
+<div class="section" id="templates">
+<h4>templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list">
+<dt class="field-odd">Mandatory</dt>
+<dd class="field-odd"><p>Yes</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>list of strings -&gt; List of partial paths to a file</p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>The templates list is used to determine which templates
+to use for the file generation. The value should be a path relative
+to the template directory that was passed to the generator when
+instantiating it. The file ending of the template should be omitted.
+Template files should follow the naming convention of
+<code class="docutils literal notranslate"><span class="pre">templateName.generatedFileExtension.j2</span></code>. There will always be one
+file generated per given template also if they differ in their file
+extension. Template file paths can be treaded a bit like wildcards.
+The generator will look for templates that start with the string
+specified and will generate one output file for each of the found
+matching templates keeping their original file extension but removing
+the <code class="docutils literal notranslate"><span class="pre">.j2</span></code> extension. For example, The following directory structure is given:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Templates/
+├─ application/
+│ ├─ program.h.j2
+│ ├─ program.c.j2
+│ ├─ programImplementation.h.j2
+│ ├─ programImplementation.c.j2
+</pre></div>
+</div>
+<p>By specifying <code class="docutils literal notranslate"><span class="pre">application/program</span></code> in the templates list the
+following files will be generated:</p>
+<ul class="simple">
+<li><p>program.h</p></li>
+<li><p>program.c</p></li>
+<li><p>programImplementation.h</p></li>
+<li><p>programImplementation.c</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="outputdir">
+<h4>outputDir<a class="headerlink" href="#outputdir" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list simple">
+<dt class="field-odd">Mandatory</dt>
+<dd class="field-odd"><p>yes</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string -&gt; Path to folder</p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>Path where the generated output files should be placed</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="filename">
+<h4>fileName<a class="headerlink" href="#filename" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list simple">
+<dt class="field-odd">Mandatory</dt>
+<dd class="field-odd"><p>no</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string -&gt; Name of the output file</p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>The name the output file will be given. File extensions
+should be omitted here as they will be taken from the template file
+name instead. If this property is not specified the name of the
+template file will be used as a default. There are the following
+placeholders available which will be replaced by some special values
+when storing output files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">{template}</span></code> -&gt; will be replaced by the full template filename
+that was used without the file extension.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{target}</span></code> -&gt; Only applicable to use when the loop property was
+used. Will be replaced by the value of the specified attribute of
+the current loop element.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="pattern">
+<h4>pattern<a class="headerlink" href="#pattern" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list">
+<dt class="field-odd">Mandatory</dt>
+<dd class="field-odd"><p>no</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>dictionary of string: string -&gt; file extension : output
+subfolder name</p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>If specified any file matching any of the defined
+extensions in the dictionary will be generated in a subfolder of the
+output directory with the name of the key value For example the
+following patter config:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">".h"</span><span class="p">:</span><span class="w"> </span><span class="s2">"inc"</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">".c"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src"</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Will put output files with the .c extension to a subfolder <code class="docutils literal notranslate"><span class="pre">src</span></code> of
+the output directory while files with the extension .h will be
+generated in a subfolder called <code class="docutils literal notranslate"><span class="pre">inc</span></code>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="loop">
+<h4>loop<a class="headerlink" href="#loop" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list simple">
+<dt class="field-odd">Mandatory</dt>
+<dd class="field-odd"><p>no</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string -&gt; Link to a config attribute in the form of
+<code class="docutils literal notranslate"><span class="pre">config/:attributeName</span></code></p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>If specified all elements in the given config will be
+looped through and for every config element one output file will be
+generated. The <code class="docutils literal notranslate"><span class="pre">{target}</span></code> placeholder will be populated with the
+value of the specified attribute of the current loop element so that
+is can be used in the <code class="docutils literal notranslate"><span class="pre">fileName</span></code> property to generate a file with a
+unique filename.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="target">
+<h4>target<a class="headerlink" href="#target" title="Permalink to this headline">¶</a></h4>
+<dl class="field-list simple">
+<dt class="field-odd">Mandatory</dt>
+<dd class="field-odd"><p>no</p>
+</dd>
+<dt class="field-even">Type</dt>
+<dd class="field-even"><p>string -&gt; variable name</p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>Can only be used if the <code class="docutils literal notranslate"><span class="pre">loop</span></code> property is also given.
+If specified an additional variable with the name that is given as
+the value of this property will become available to be used in the
+template containing the current loop element.</p>
+</dd>
+</dl>
+<p>Example configuration of both looped and non looped files:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"templates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">      </span><span class="s2">"application/program"</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"outputDir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{ApplicationGenDir}"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"loop"</span><span class="p">:</span><span class="w"> </span><span class="s2">"programs/:name"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"fileName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{target}"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"program"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">".h"</span><span class="p">:</span><span class="w"> </span><span class="s2">"inc"</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">".c"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src"</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"templates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">      </span><span class="s2">"core/thread/thread"</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"outputDir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{CoreGeneratedDir}/thread"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"fileName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{template}"</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">"pattern"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">".h"</span><span class="p">:</span><span class="w"> </span><span class="s2">"inc"</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">".c"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src"</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -1072,23 +1191,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../logicRunners.html">
+          <a class="next-page" href="genericJson.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Logic Runners</div>
+                <div class="title">Generic json file structure</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="links.html">
+          <a class="prev-page" href="../configuration.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Linking configs, elements and attributes</div>
+                <div class="title">Configuration</div>
                 
               </div>
             </a>
@@ -1098,7 +1217,7 @@
               Copyright &#169; 2021, Pavol Kostolansky, Florian Laschober |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
-            | <a class="muted-link" href="../../../../_sources/sites/documentation/customBox/parser/constants.rst.txt"
+            | <a class="muted-link" href="../../../../_sources/sites/howTo/setupReferenceProject/configuration/environment.rst.txt"
                rel="nofollow">
               Show Source
             </a>
@@ -1118,9 +1237,23 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Parser constants definitions</a><ul>
-<li><a class="reference internal" href="#supported-attribute-types">Supported attribute types</a></li>
-<li><a class="reference internal" href="#supported-json-config-file-keys">Supported JSON config file keys</a></li>
+<li><a class="reference internal" href="#">Environment and file generation config files</a><ul>
+<li><a class="reference internal" href="#environment-config">Environment config</a><ul>
+<li><a class="reference internal" href="#placeholders">Placeholders</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#file-generation-config">File generation config</a><ul>
+<li><a class="reference internal" href="#description-of-config-file-structure">Description of config file structure</a><ul>
+<li><a class="reference internal" href="#templates">templates</a></li>
+<li><a class="reference internal" href="#outputdir">outputDir</a></li>
+<li><a class="reference internal" href="#filename">fileName</a></li>
+<li><a class="reference internal" href="#pattern">pattern</a></li>
+<li><a class="reference internal" href="#loop">loop</a></li>
+<li><a class="reference internal" href="#target">target</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
